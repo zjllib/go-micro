@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	"github.com/zjllib/go-micro/client"
-	"github.com/zjllib/go-micro/selector"
+	"github.com/zjllib/go-micro/plugins/selector/shard"
 	"github.com/zjllib/go-micro/registry"
-	"github.com/zjllib/go-micro/plugins/selector/shard/v3"
+	"github.com/zjllib/go-micro/selector"
 )
 
 func TestShard(t *testing.T) {

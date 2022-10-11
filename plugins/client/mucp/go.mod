@@ -1,4 +1,4 @@
-module github.com/zjllib/go-micro/plugins/client/mucp/v3
+module github.com/zjllib/go-micro/plugins/client/mucp
 
 go 1.16
 

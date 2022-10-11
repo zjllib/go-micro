@@ -9,7 +9,7 @@ import (
 	api "github.com/zjllib/go-micro/api/proto"
 	"github.com/zjllib/go-micro/errors"
 	hello "github.com/zjllib/go-micro/examples/greeter/srv/proto/hello"
-	shard "github.com/zjllib/go-micro/plugins/wrapper/select/shard/v3"
+	shard "github.com/zjllib/go-micro/plugins/wrapper/select/shard"
 
 	"context"
 )

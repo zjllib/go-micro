@@ -5,9 +5,9 @@ import (
 	"net"
 	"testing"
 
-	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
 	"github.com/zjllib/go-micro/client"
 	"github.com/zjllib/go-micro/errors"
+	"github.com/zjllib/go-micro/plugins/registry/memory"
 	"github.com/zjllib/go-micro/registry"
 	"github.com/zjllib/go-micro/selector"
 	pgrpc "google.golang.org/grpc"

@@ -7,8 +7,8 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/plugins/registry/memory"
 	"github.com/zjllib/go-micro/registry"
-	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
 )
 
 var (

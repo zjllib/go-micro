@@ -7,7 +7,7 @@ package main
 
 import (
 	"github.com/zjllib/go-micro"
-	hystrix "github.com/zjllib/go-micro/plugins/wrapper/breaker/hystrix/v3"
+	hystrix "github.com/zjllib/go-micro/plugins/wrapper/breaker/hystrix"
 )
 
 func main() {
@@ -25,7 +25,7 @@ package main
 
 import (
 	"github.com/zjllib/go-micro"
-	hystrix "github.com/zjllib/go-micro/plugins/wrapper/breaker/hystrix/v3"
+	hystrix "github.com/zjllib/go-micro/plugins/wrapper/breaker/hystrix"
 )
 
 func main() {
@@ -64,7 +64,7 @@ package main
 
 import (
 	"github.com/zjllib/go-micro"
-	hystrix "github.com/zjllib/go-micro/plugins/wrapper/breaker/hystrix/v3"
+	hystrix "github.com/zjllib/go-micro/plugins/wrapper/breaker/hystrix"
 )
 
 func main() {

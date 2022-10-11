@@ -6,10 +6,10 @@ import (
 	"path"
 	"strings"
 
+	"github.com/urfave/cli/v2"
 	"github.com/zjllib/go-micro/cmd/gomu/cmd"
 	"github.com/zjllib/go-micro/cmd/gomu/generator"
 	tmpl "github.com/zjllib/go-micro/cmd/gomu/generator/template"
-	"github.com/urfave/cli/v2"
 )
 
 var flags []cli.Flag = []cli.Flag{
@@ -180,7 +180,7 @@ func protoComments(name, dir string) []string {
 		"\ndownload protobuf for go-micro:\n",
 		"go get -u google.golang.org/protobuf/proto",
 		"go install github.com/golang/protobuf/protoc-gen-go@latest",
-		"go install github.com/zjllib/go-micro/cmd/protoc-gen-micro/v3@latest",
+		"go install github.com/zjllib/go-micro/cmd/protoc-gen-micro@latest",
 		"\ncompile the proto file " + name + ".proto:\n",
 		"cd " + dir,
 		"make proto tidy\n",

@@ -10,9 +10,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/zjllib/go-micro/plugins/client/http/v3/test"
-	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
 	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/plugins/client/http/test"
+	"github.com/zjllib/go-micro/plugins/registry/memory"
 	"github.com/zjllib/go-micro/registry"
 	"github.com/zjllib/go-micro/selector"
 )

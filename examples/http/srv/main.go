@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/zjllib/go-micro"
-	httpServer "github.com/zjllib/go-micro/plugins/server/http/v3"
+	httpServer "github.com/zjllib/go-micro/plugins/server/http"
 
 	"github.com/gin-gonic/gin"
 	"github.com/zjllib/go-micro/registry"

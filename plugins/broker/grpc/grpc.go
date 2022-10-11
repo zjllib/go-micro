@@ -18,12 +18,12 @@ import (
 	"github.com/zjllib/go-micro/cmd"
 	merr "github.com/zjllib/go-micro/errors"
 	log "github.com/zjllib/go-micro/logger"
+	proto "github.com/zjllib/go-micro/plugins/broker/grpc/proto"
 	"github.com/zjllib/go-micro/registry"
 	"github.com/zjllib/go-micro/registry/cache"
 	maddr "github.com/zjllib/go-micro/util/addr"
 	mnet "github.com/zjllib/go-micro/util/net"
 	mls "github.com/zjllib/go-micro/util/tls"
-	proto "github.com/zjllib/go-micro/plugins/broker/grpc/v3/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 )

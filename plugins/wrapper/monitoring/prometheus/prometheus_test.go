@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/zjllib/go-micro/broker"
-	bmemory "github.com/zjllib/go-micro/plugins/broker/memory/v3"
-	"github.com/zjllib/go-micro/client"
-	"github.com/zjllib/go-micro/selector"
-	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
-	"github.com/zjllib/go-micro/server"
-	promwrapper "github.com/zjllib/go-micro/plugins/wrapper/monitoring/prometheus/v3"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
 	"github.com/stretchr/testify/assert"
+	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/client"
+	bmemory "github.com/zjllib/go-micro/plugins/broker/memory"
+	"github.com/zjllib/go-micro/plugins/registry/memory"
+	promwrapper "github.com/zjllib/go-micro/plugins/wrapper/monitoring/prometheus"
+	"github.com/zjllib/go-micro/selector"
+	"github.com/zjllib/go-micro/server"
 )
 
 type Test interface {

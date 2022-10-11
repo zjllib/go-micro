@@ -9,7 +9,7 @@ import (
 	api "github.com/zjllib/go-micro/api/proto"
 	"github.com/zjllib/go-micro/errors"
 	hello "github.com/zjllib/go-micro/examples/greeter/srv/proto/hello"
-	roundrobin "github.com/zjllib/go-micro/plugins/wrapper/select/roundrobin/v3"
+	"github.com/zjllib/go-micro/plugins/wrapper/select/roundrobin"
 
 	"context"
 )

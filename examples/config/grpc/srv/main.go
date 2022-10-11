@@ -14,8 +14,8 @@ import (
 	"github.com/zjllib/go-micro/config/reader/json"
 	"github.com/zjllib/go-micro/config/source/file"
 	log "github.com/zjllib/go-micro/logger"
-	yaml "github.com/zjllib/go-micro/plugins/config/encoder/yaml/v3"
-	proto "github.com/zjllib/go-micro/plugins/config/source/grpc/v3/proto"
+	yaml "github.com/zjllib/go-micro/plugins/config/encoder/yaml"
+	proto "github.com/zjllib/go-micro/plugins/config/source/grpc/proto"
 	grpc "google.golang.org/grpc"
 )
 

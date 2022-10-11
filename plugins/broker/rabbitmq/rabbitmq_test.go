@@ -7,8 +7,8 @@ import (
 
 	micro "github.com/zjllib/go-micro"
 	broker "github.com/zjllib/go-micro/broker"
+	rabbitmq "github.com/zjllib/go-micro/plugins/broker/rabbitmq"
 	server "github.com/zjllib/go-micro/server"
-	rabbitmq "github.com/zjllib/go-micro/plugins/broker/rabbitmq/v3"
 )
 
 type Example struct{}

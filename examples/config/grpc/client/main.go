@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/zjllib/go-micro/config"
 	log "github.com/zjllib/go-micro/logger"
-	grpcConfig "github.com/zjllib/go-micro/plugins/config/source/grpc/v3"
+	grpcConfig "github.com/zjllib/go-micro/plugins/config/source/grpc"
 )
 
 type Micro struct {

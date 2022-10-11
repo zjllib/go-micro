@@ -16,12 +16,12 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/google/uuid"
 	"github.com/hashicorp/memberlist"
+	"github.com/mitchellh/hashstructure"
 	"github.com/zjllib/go-micro/cmd"
 	log "github.com/zjllib/go-micro/logger"
+	pb "github.com/zjllib/go-micro/plugins/registry/gossip/proto"
 	"github.com/zjllib/go-micro/registry"
 	regutil "github.com/zjllib/go-micro/util/registry"
-	pb "github.com/zjllib/go-micro/plugins/registry/gossip/v3/proto"
-	"github.com/mitchellh/hashstructure"
 )
 
 // use registry.Result int32 values after it switches from string to int32 types

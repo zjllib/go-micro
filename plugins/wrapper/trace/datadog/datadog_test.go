@@ -9,12 +9,12 @@ import (
 
 	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
 
-	"github.com/zjllib/go-micro/client"
-	"github.com/zjllib/go-micro/selector"
-	microerr "github.com/zjllib/go-micro/errors"
-	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
-	"github.com/zjllib/go-micro/server"
 	"github.com/stretchr/testify/assert"
+	"github.com/zjllib/go-micro/client"
+	microerr "github.com/zjllib/go-micro/errors"
+	"github.com/zjllib/go-micro/plugins/registry/memory"
+	"github.com/zjllib/go-micro/selector"
+	"github.com/zjllib/go-micro/server"
 	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/mocktracer"
 
 	cli "github.com/zjllib/go-micro/client"

@@ -7,7 +7,7 @@ import (
 	"github.com/zjllib/go-micro/config/reader"
 	"github.com/zjllib/go-micro/config/reader/json"
 	"github.com/zjllib/go-micro/config/source/file"
-	yaml "github.com/zjllib/go-micro/plugins/config/encoder/yaml/v3"
+	yaml "github.com/zjllib/go-micro/plugins/config/encoder/yaml"
 )
 
 func main() {

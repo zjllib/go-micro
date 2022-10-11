@@ -16,12 +16,12 @@ import (
 	"github.com/zjllib/go-micro/server"
 	"github.com/zjllib/go-micro/transport"
 
-	bmemory "github.com/zjllib/go-micro/plugins/broker/memory/v3"
-	gcli "github.com/zjllib/go-micro/plugins/client/grpc/v3"
-	rmemory "github.com/zjllib/go-micro/plugins/registry/memory/v3"
-	gsrv "github.com/zjllib/go-micro/plugins/server/grpc/v3"
-	pb "github.com/zjllib/go-micro/plugins/server/grpc/v3/proto"
-	tgrpc "github.com/zjllib/go-micro/plugins/transport/grpc/v3"
+	bmemory "github.com/zjllib/go-micro/plugins/broker/memory"
+	gcli "github.com/zjllib/go-micro/plugins/client/grpc"
+	rmemory "github.com/zjllib/go-micro/plugins/registry/memory"
+	gsrv "github.com/zjllib/go-micro/plugins/server/grpc"
+	pb "github.com/zjllib/go-micro/plugins/server/grpc/proto"
+	tgrpc "github.com/zjllib/go-micro/plugins/transport/grpc"
 )
 
 // server is used to implement helloworld.GreeterServer.

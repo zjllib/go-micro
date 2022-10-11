@@ -7,7 +7,7 @@ import (
 	"github.com/zjllib/go-micro/config"
 	"github.com/zjllib/go-micro/config/source"
 	"github.com/zjllib/go-micro/config/source/file"
-	"github.com/zjllib/go-micro/plugins/config/encoder/toml/v3"
+	"github.com/zjllib/go-micro/plugins/config/encoder/toml"
 )
 
 func main() {

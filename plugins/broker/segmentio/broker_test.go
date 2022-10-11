@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/zjllib/go-micro/broker"
-	segmentio "github.com/zjllib/go-micro/plugins/broker/segmentio/v3"
+	"github.com/zjllib/go-micro/plugins/broker/segmentio"
 )
 
 var (

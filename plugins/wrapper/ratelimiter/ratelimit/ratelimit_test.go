@@ -8,13 +8,13 @@ import (
 	"context"
 
 	"github.com/juju/ratelimit"
-	bmemory "github.com/zjllib/go-micro/plugins/broker/memory/v3"
 	"github.com/zjllib/go-micro/client"
-	"github.com/zjllib/go-micro/selector"
 	"github.com/zjllib/go-micro/errors"
-	rmemory "github.com/zjllib/go-micro/plugins/registry/memory/v3"
+	bmemory "github.com/zjllib/go-micro/plugins/broker/memory"
+	rmemory "github.com/zjllib/go-micro/plugins/registry/memory"
+	tmemory "github.com/zjllib/go-micro/plugins/transport/memory"
+	"github.com/zjllib/go-micro/selector"
 	"github.com/zjllib/go-micro/server"
-	tmemory "github.com/zjllib/go-micro/plugins/transport/memory/v3"
 )
 
 type testHandler struct{}

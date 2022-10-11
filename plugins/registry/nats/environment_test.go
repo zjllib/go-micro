@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	log "github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/plugins/registry/nats"
 	"github.com/zjllib/go-micro/registry"
-	"github.com/zjllib/go-micro/plugins/registry/nats/v3"
 )
 
 type environment struct {

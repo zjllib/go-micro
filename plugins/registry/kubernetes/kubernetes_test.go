@@ -10,9 +10,9 @@ import (
 	"time"
 
 	log "github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/plugins/registry/kubernetes/client"
+	"github.com/zjllib/go-micro/plugins/registry/kubernetes/client/mock"
 	"github.com/zjllib/go-micro/registry"
-	"github.com/zjllib/go-micro/plugins/registry/kubernetes/v3/client"
-	"github.com/zjllib/go-micro/plugins/registry/kubernetes/v3/client/mock"
 )
 
 var (

@@ -7,9 +7,9 @@ import (
 	"sync"
 
 	log "github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/plugins/registry/kubernetes/client"
+	"github.com/zjllib/go-micro/plugins/registry/kubernetes/client/watch"
 	"github.com/zjllib/go-micro/registry"
-	"github.com/zjllib/go-micro/plugins/registry/kubernetes/v3/client"
-	"github.com/zjllib/go-micro/plugins/registry/kubernetes/v3/client/watch"
 )
 
 type k8sWatcher struct {

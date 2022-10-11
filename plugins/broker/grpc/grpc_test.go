@@ -7,7 +7,7 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/zjllib/go-micro/broker"
-	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
+	"github.com/zjllib/go-micro/plugins/registry/memory"
 )
 
 func sub(be *testing.B, c int) {

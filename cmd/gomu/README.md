@@ -48,7 +48,7 @@ You will need protoc-gen-micro for code generation
 # https://github.com/protocolbuffers/protobuf/releases
 go get -u google.golang.org/protobuf/proto
 go install github.com/golang/protobuf/protoc-gen-go@latest
-go install github.com/zjllib/go-micro/cmd/protoc-gen-micro/v3@latest
+go install github.com/zjllib/go-micro/cmd/protoc-gen-micro@latest
 ```
 
 ## Creating A Service
@@ -67,7 +67,7 @@ download protobuf for go-micro:
 
 go get -u google.golang.org/protobuf/proto
 go install github.com/golang/protobuf/protoc-gen-go@latest
-go install github.com/zjllib/go-micro/cmd/protoc-gen-micro/v3@latest
+go install github.com/zjllib/go-micro/cmd/protoc-gen-micro@latest
 
 compile the proto file helloworld.proto:
 
@@ -90,7 +90,7 @@ download protobuf for go-micro:
 
 go get -u google.golang.org/protobuf/proto
 go install github.com/golang/protobuf/protoc-gen-go@latest
-go install github.com/zjllib/go-micro/cmd/protoc-gen-micro/v3@latest
+go install github.com/zjllib/go-micro/cmd/protoc-gen-micro@latest
 
 compile the proto file helloworld.proto:
 

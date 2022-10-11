@@ -4,11 +4,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/zjllib/go-micro/client"
-	"github.com/zjllib/go-micro/selector"
-	"github.com/zjllib/go-micro/errors"
-	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
 	"github.com/sony/gobreaker"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/errors"
+	"github.com/zjllib/go-micro/plugins/registry/memory"
+	"github.com/zjllib/go-micro/selector"
 )
 
 func TestBreaker(t *testing.T) {

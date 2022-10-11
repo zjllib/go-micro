@@ -2,7 +2,7 @@ package grpc
 
 import (
 	"github.com/zjllib/go-micro/config/source"
-	proto "github.com/zjllib/go-micro/plugins/config/source/grpc/v3/proto"
+	proto "github.com/zjllib/go-micro/plugins/config/source/grpc/proto"
 )
 
 type watcher struct {

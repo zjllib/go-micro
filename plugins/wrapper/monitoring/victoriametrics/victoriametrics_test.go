@@ -10,11 +10,11 @@ import (
 	"testing"
 
 	metrics "github.com/VictoriaMetrics/metrics"
-	"github.com/zjllib/go-micro/client"
-	"github.com/zjllib/go-micro/selector"
-	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
-	"github.com/zjllib/go-micro/server"
 	"github.com/stretchr/testify/assert"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/plugins/registry/memory"
+	"github.com/zjllib/go-micro/selector"
+	"github.com/zjllib/go-micro/server"
 )
 
 type Test interface {

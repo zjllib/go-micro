@@ -40,9 +40,9 @@ Import the plugins in a `plugins.go` file
 package main
 
 import (
-	_ "github.com/zjllib/go-micro/plugins/broker/rabbitmq/v3"
-	_ "github.com/zjllib/go-micro/plugins/registry/kubernetes/v3"
-	_ "github.com/zjllib/go-micro/plugins/transport/nats/v3"
+	_ "github.com/zjllib/go-micro/plugins/broker/rabbitmq"
+	_ "github.com/zjllib/go-micro/plugins/registry/kubernetes"
+	_ "github.com/zjllib/go-micro/plugins/transport/nats"
 )
 ```
 
@@ -98,7 +98,7 @@ Import and set as options when creating a new service
 ```go
 import (
 	"github.com/zjllib/go-micro"
-	"github.com/zjllib/go-micro/plugins/registry/kubernetes/v3"
+	"github.com/zjllib/go-micro/plugins/registry/kubernetes"
 )
 
 func main() {
@@ -125,9 +125,9 @@ Create file plugins.go
 package main
 
 import (
-	_ "github.com/zjllib/go-micro/plugins/broker/rabbitmq/v3"
-	_ "github.com/zjllib/go-micro/plugins/registry/kubernetes/v3"
-	_ "github.com/zjllib/go-micro/plugins/transport/nats/v3"
+	_ "github.com/zjllib/go-micro/plugins/broker/rabbitmq"
+	_ "github.com/zjllib/go-micro/plugins/registry/kubernetes"
+	_ "github.com/zjllib/go-micro/plugins/transport/nats"
 )
 ```
 
