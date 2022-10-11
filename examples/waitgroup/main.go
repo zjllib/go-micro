@@ -5,8 +5,8 @@ import (
 	"sync"
 
 	"context"
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro"
+	"github.com/zjllib/go-micro/server"
 )
 
 // waitgroup is a handler wrapper which adds a handler to a sync.WaitGroup

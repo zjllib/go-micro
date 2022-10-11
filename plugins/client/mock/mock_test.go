@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/zjllib/go-micro/v3/errors"
+	"github.com/zjllib/go-micro/errors"
 )
 
 func TestClient(t *testing.T) {

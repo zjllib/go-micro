@@ -2,9 +2,9 @@
 package service
 
 import (
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/server"
 
 	"context"
 )

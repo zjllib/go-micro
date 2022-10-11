@@ -3,7 +3,7 @@ package micro
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro/client"
 )
 
 type event struct {

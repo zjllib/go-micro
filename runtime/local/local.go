@@ -2,7 +2,7 @@
 package local
 
 import (
-	"github.com/zjllib/go-micro/v3/runtime"
+	"github.com/zjllib/go-micro/runtime"
 )
 
 // NewRuntime returns a new local runtime

@@ -1,7 +1,7 @@
 package http
 
 import (
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro/client"
 )
 
 type httpMessage struct {

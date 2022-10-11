@@ -4,11 +4,11 @@ import (
 	"context"
 	"crypto/tls"
 	"encoding/gob"
-	"github.com/zjllib/go-micro/v3/cmd"
+	"github.com/zjllib/go-micro/cmd"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/transport"
-	utls "github.com/zjllib/go-micro/v3/util/tls"
+	"github.com/zjllib/go-micro/transport"
+	utls "github.com/zjllib/go-micro/util/tls"
 	quic "github.com/lucas-clemente/quic-go"
 )
 

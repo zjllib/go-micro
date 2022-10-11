@@ -6,10 +6,10 @@ import (
 	"testing"
 
 	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/errors"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/selector"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/errors"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/selector"
 	pgrpc "google.golang.org/grpc"
 	pb "google.golang.org/grpc/examples/helloworld/helloworld"
 )

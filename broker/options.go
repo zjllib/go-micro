@@ -4,8 +4,8 @@ import (
 	"context"
 	"crypto/tls"
 
-	"github.com/zjllib/go-micro/v3/codec"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/codec"
+	"github.com/zjllib/go-micro/registry"
 )
 
 type Options struct {

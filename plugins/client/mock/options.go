@@ -1,7 +1,7 @@
 package mock
 
 import (
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro/client"
 )
 
 // Response sets the response methods for a service

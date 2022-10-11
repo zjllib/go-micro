@@ -3,9 +3,9 @@ package server
 import (
 	"bytes"
 
-	"github.com/zjllib/go-micro/v3/codec"
-	"github.com/zjllib/go-micro/v3/transport"
-	"github.com/zjllib/go-micro/v3/util/buf"
+	"github.com/zjllib/go-micro/codec"
+	"github.com/zjllib/go-micro/transport"
+	"github.com/zjllib/go-micro/util/buf"
 )
 
 type rpcRequest struct {

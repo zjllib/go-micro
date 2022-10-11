@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/errors"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro"
+	"github.com/zjllib/go-micro/errors"
+	"github.com/zjllib/go-micro/server"
 )
 
 // Router will proxy rpc requests as http POST requests. It is a server.Router

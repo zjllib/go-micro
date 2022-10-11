@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/hudl/fargo"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/registry"
 )
 
 func appToService(app *fargo.Application) []*registry.Service {

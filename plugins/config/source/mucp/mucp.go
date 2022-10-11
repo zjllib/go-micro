@@ -3,9 +3,9 @@ package mucp
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3/cmd"
-	"github.com/zjllib/go-micro/v3/config/source"
-	log "github.com/zjllib/go-micro/v3/logger"
+	"github.com/zjllib/go-micro/cmd"
+	"github.com/zjllib/go-micro/config/source"
+	log "github.com/zjllib/go-micro/logger"
 	proto "github.com/zjllib/go-micro/plugins/config/source/mucp/v3/proto"
 )
 

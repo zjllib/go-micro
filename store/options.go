@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro/client"
 )
 
 // Options contains configuration for the Store

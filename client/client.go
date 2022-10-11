@@ -5,7 +5,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/codec"
+	"github.com/zjllib/go-micro/codec"
 )
 
 // Client is the interface used to make requests to services.

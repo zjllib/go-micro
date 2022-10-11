@@ -5,11 +5,11 @@ import (
 	"log"
 	"strings"
 
-	hello "github.com/zjllib/go-micro/examples/v3/greeter/srv/proto/hello"
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/errors"
+	"github.com/zjllib/go-micro"
+	api "github.com/zjllib/go-micro/api/proto"
+	"github.com/zjllib/go-micro/errors"
+	hello "github.com/zjllib/go-micro/examples/greeter/srv/proto/hello"
 	roundrobin "github.com/zjllib/go-micro/plugins/wrapper/select/roundrobin/v3"
-	api "github.com/zjllib/go-micro/v3/api/proto"
 
 	"context"
 )

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/zjllib/go-micro/v3"
 	"github.com/urfave/cli/v2"
+	"github.com/zjllib/go-micro"
 )
 
 func main() {

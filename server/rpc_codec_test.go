@@ -5,8 +5,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/zjllib/go-micro/v3/codec"
-	"github.com/zjllib/go-micro/v3/transport"
+	"github.com/zjllib/go-micro/codec"
+	"github.com/zjllib/go-micro/transport"
 )
 
 // testCodec is a dummy codec that only knows how to encode nil bodies

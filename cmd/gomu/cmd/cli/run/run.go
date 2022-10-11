@@ -8,8 +8,8 @@ import (
 	"strings"
 
 	"github.com/zjllib/go-micro/cmd/gomu/cmd"
-	"github.com/zjllib/go-micro/v3/runtime"
-	"github.com/zjllib/go-micro/v3/runtime/local/git"
+	"github.com/zjllib/go-micro/runtime"
+	"github.com/zjllib/go-micro/runtime/local/git"
 	"github.com/fsnotify/fsnotify"
 	"github.com/urfave/cli/v2"
 )

@@ -3,7 +3,7 @@ package url
 import (
 	"errors"
 
-	"github.com/zjllib/go-micro/v3/config/source"
+	"github.com/zjllib/go-micro/config/source"
 )
 
 type urlWatcher struct {

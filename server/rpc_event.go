@@ -1,8 +1,8 @@
 package server
 
 import (
-	"github.com/zjllib/go-micro/v3/broker"
-	"github.com/zjllib/go-micro/v3/transport"
+	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/transport"
 )
 
 // event is a broker event we handle on the server transport

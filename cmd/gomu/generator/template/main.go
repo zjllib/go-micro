@@ -9,8 +9,8 @@ import (
 
 	pb "{{.Vendor}}{{lower .Service}}/proto"
 
-	"github.com/zjllib/go-micro/v3"
-	log "github.com/zjllib/go-micro/v3/logger"
+	"github.com/zjllib/go-micro"
+	log "github.com/zjllib/go-micro/logger"
 )
 
 var (
@@ -47,8 +47,8 @@ import (
 	"{{.Vendor}}{{.Service}}/handler"
 
 {{if .Jaeger}}	ot "github.com/zjllib/go-micro/plugins/wrapper/trace/opentracing/v3"
-{{end}}	"github.com/zjllib/go-micro/v3"
-	log "github.com/zjllib/go-micro/v3/logger"{{if .Jaeger}}
+{{end}}	"github.com/zjllib/go-micro"
+	log "github.com/zjllib/go-micro/logger"{{if .Jaeger}}
 
 	"github.com/zjllib/go-micro/cmd/gomu/debug/trace/jaeger"{{end}}
 )
@@ -99,8 +99,8 @@ import (
 	pb "{{.Vendor}}{{.Service}}/proto"
 
 {{if .Jaeger}}	ot "github.com/zjllib/go-micro/plugins/wrapper/trace/opentracing/v3"
-{{end}}	"github.com/zjllib/go-micro/v3"
-	log "github.com/zjllib/go-micro/v3/logger"{{if .Jaeger}}
+{{end}}	"github.com/zjllib/go-micro"
+	log "github.com/zjllib/go-micro/logger"{{if .Jaeger}}
 
 	"github.com/zjllib/go-micro/cmd/gomu/debug/trace/jaeger"{{end}}
 )

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/store"
+	"github.com/zjllib/go-micro/store"
 	"github.com/go-redis/redis/v8"
 )
 

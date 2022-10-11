@@ -2,8 +2,8 @@
 package cache
 
 import (
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/registry/cache"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/registry/cache"
 )
 
 // New returns a new cache

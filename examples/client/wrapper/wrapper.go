@@ -5,11 +5,11 @@ import (
 	"time"
 
 	"context"
-	example "github.com/zjllib/go-micro/examples/v3/server/proto/example"
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/cmd"
-	"github.com/zjllib/go-micro/v3/metadata"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/cmd"
+	example "github.com/zjllib/go-micro/examples/server/proto/example"
+	"github.com/zjllib/go-micro/metadata"
+	"github.com/zjllib/go-micro/registry"
 )
 
 // wrapper example code

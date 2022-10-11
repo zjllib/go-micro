@@ -4,7 +4,7 @@ package reader
 import (
 	"time"
 
-	"github.com/zjllib/go-micro/v3/config/source"
+	"github.com/zjllib/go-micro/config/source"
 )
 
 // Reader is an interface for merging changesets

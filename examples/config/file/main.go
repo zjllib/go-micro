@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/zjllib/go-micro/v3/config"
-	"github.com/zjllib/go-micro/v3/config/source/file"
+	"github.com/zjllib/go-micro/config"
+	"github.com/zjllib/go-micro/config/source/file"
 )
 
 func main() {

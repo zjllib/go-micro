@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/logger"
+	"github.com/zjllib/go-micro/logger"
 	"github.com/rs/zerolog"
 )
 

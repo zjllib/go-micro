@@ -6,13 +6,13 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/selector"
-	"github.com/zjllib/go-micro/v3/cmd"
-	"github.com/zjllib/go-micro/v3/metadata"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/cmd"
+	"github.com/zjllib/go-micro/metadata"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/selector"
 
-	example "github.com/zjllib/go-micro/examples/v3/server/proto/example"
+	example "github.com/zjllib/go-micro/examples/server/proto/example"
 )
 
 func init() {

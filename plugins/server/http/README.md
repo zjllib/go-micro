@@ -37,7 +37,7 @@ Or as part of a service
 import (
 	"net/http"
 
-	"github.com/zjllib/go-micro/v3"
+	"github.com/zjllib/go-micro"
 	"github.com/micro/go-micro/server"
 	httpServer "github.com/zjllib/go-micro/plugins/server/http"
 )

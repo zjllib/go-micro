@@ -12,9 +12,9 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/oxtoacart/bpool"
-	"github.com/zjllib/go-micro/v3/api/handler"
-	proto "github.com/zjllib/go-micro/v3/api/proto"
-	"github.com/zjllib/go-micro/v3/util/ctx"
+	"github.com/zjllib/go-micro/api/handler"
+	proto "github.com/zjllib/go-micro/api/proto"
+	"github.com/zjllib/go-micro/util/ctx"
 )
 
 var (

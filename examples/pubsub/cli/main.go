@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"context"
-	proto "github.com/zjllib/go-micro/examples/v3/pubsub/srv/proto"
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/util/log"
 	"github.com/pborman/uuid"
+	"github.com/zjllib/go-micro"
+	proto "github.com/zjllib/go-micro/examples/pubsub/srv/proto"
+	"github.com/zjllib/go-micro/util/log"
 )
 
 // send events using the publisher

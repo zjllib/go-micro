@@ -11,9 +11,9 @@ import (
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/sqs"
-	"github.com/zjllib/go-micro/v3/broker"
-	"github.com/zjllib/go-micro/v3/cmd"
-	log "github.com/zjllib/go-micro/v3/logger"
+	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/cmd"
+	log "github.com/zjllib/go-micro/logger"
 )
 
 const (

@@ -10,13 +10,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/api"
-	"github.com/zjllib/go-micro/v3/api/router"
-	"github.com/zjllib/go-micro/v3/api/router/util"
-	"github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/metadata"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/registry/cache"
+	"github.com/zjllib/go-micro/api"
+	"github.com/zjllib/go-micro/api/router"
+	"github.com/zjllib/go-micro/api/router/util"
+	"github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/metadata"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/registry/cache"
 )
 
 // endpoint struct, that holds compiled pcre

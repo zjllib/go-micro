@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/hashicorp/consul/api"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/registry"
 )
 
 func TestHealthyServiceHandler(t *testing.T) {

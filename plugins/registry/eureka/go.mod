@@ -3,7 +3,7 @@ module github.com/zjllib/go-micro/plugins/registry/eureka/v3
 go 1.16
 
 require (
-	github.com/zjllib/go-micro/v3 v3.5.2-0.20210630062103-c13bb07171bc
+	github.com/zjllib/go-micro v3.5.2-0.20210630062103-c13bb07171bc
 	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/clbanning/x2j v0.0.0-20191024224557-825249438eec // indirect
 	github.com/franela/goblin v0.0.0-20210519012713-85d372ac71e2 // indirect
@@ -14,4 +14,4 @@ require (
 	gopkg.in/gcfg.v1 v1.2.3 // indirect
 )
 
-replace github.com/zjllib/go-micro/v3 => ../../../../go-micro
+replace github.com/zjllib/go-micro => ../../../../go-micro

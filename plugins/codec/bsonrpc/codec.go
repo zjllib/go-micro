@@ -4,7 +4,7 @@ import (
 	"io"
 
 	"github.com/asim/go-bson"
-	"github.com/zjllib/go-micro/v3/codec"
+	"github.com/zjllib/go-micro/codec"
 )
 
 type clientCodec struct {

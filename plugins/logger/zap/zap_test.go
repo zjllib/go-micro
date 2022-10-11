@@ -3,7 +3,7 @@ package zap
 import (
 	"testing"
 
-	"github.com/zjllib/go-micro/v3/logger"
+	"github.com/zjllib/go-micro/logger"
 )
 
 func TestName(t *testing.T) {

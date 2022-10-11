@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/errors"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/errors"
 	"github.com/sony/gobreaker"
 )
 

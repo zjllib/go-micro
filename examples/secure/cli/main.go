@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/transport"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/transport"
 
-	hello "github.com/zjllib/go-micro/examples/v3/greeter/srv/proto/hello"
+	hello "github.com/zjllib/go-micro/examples/greeter/srv/proto/hello"
 
 	"context"
 )

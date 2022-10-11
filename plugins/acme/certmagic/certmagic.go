@@ -7,8 +7,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/api/server/acme"
-	"github.com/zjllib/go-micro/v3/logger"
+	"github.com/zjllib/go-micro/api/server/acme"
+	"github.com/zjllib/go-micro/logger"
 	"github.com/caddyserver/certmagic"
 )
 

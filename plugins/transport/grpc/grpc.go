@@ -6,11 +6,11 @@ import (
 	"crypto/tls"
 	"net"
 
-	"github.com/zjllib/go-micro/v3/transport"
-	maddr "github.com/zjllib/go-micro/v3/util/addr"
-	mnet "github.com/zjllib/go-micro/v3/util/net"
-	mls "github.com/zjllib/go-micro/v3/util/tls"
-	"github.com/zjllib/go-micro/v3/cmd"
+	"github.com/zjllib/go-micro/transport"
+	maddr "github.com/zjllib/go-micro/util/addr"
+	mnet "github.com/zjllib/go-micro/util/net"
+	mls "github.com/zjllib/go-micro/util/tls"
+	"github.com/zjllib/go-micro/cmd"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 

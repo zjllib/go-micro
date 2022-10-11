@@ -9,13 +9,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/zjllib/go-micro/config"
+	"github.com/zjllib/go-micro/config/reader"
+	"github.com/zjllib/go-micro/config/reader/json"
+	"github.com/zjllib/go-micro/config/source/file"
+	log "github.com/zjllib/go-micro/logger"
 	yaml "github.com/zjllib/go-micro/plugins/config/encoder/yaml/v3"
 	proto "github.com/zjllib/go-micro/plugins/config/source/grpc/v3/proto"
-	"github.com/zjllib/go-micro/v3/config"
-	"github.com/zjllib/go-micro/v3/config/reader"
-	"github.com/zjllib/go-micro/v3/config/reader/json"
-	"github.com/zjllib/go-micro/v3/config/source/file"
-	log "github.com/zjllib/go-micro/v3/logger"
 	grpc "google.golang.org/grpc"
 )
 

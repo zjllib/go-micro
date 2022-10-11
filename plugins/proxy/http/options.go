@@ -1,8 +1,8 @@
 package http
 
 import (
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro"
+	"github.com/zjllib/go-micro/server"
 )
 
 // WithBackend provides an option to set the http backend url

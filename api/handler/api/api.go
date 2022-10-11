@@ -4,13 +4,13 @@ package api
 import (
 	"net/http"
 
-	goapi "github.com/zjllib/go-micro/v3/api"
-	"github.com/zjllib/go-micro/v3/api/handler"
-	api "github.com/zjllib/go-micro/v3/api/proto"
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/errors"
-	"github.com/zjllib/go-micro/v3/selector"
-	"github.com/zjllib/go-micro/v3/util/ctx"
+	goapi "github.com/zjllib/go-micro/api"
+	"github.com/zjllib/go-micro/api/handler"
+	api "github.com/zjllib/go-micro/api/proto"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/errors"
+	"github.com/zjllib/go-micro/selector"
+	"github.com/zjllib/go-micro/util/ctx"
 )
 
 type apiHandler struct {

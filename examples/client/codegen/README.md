@@ -133,7 +133,7 @@ import (
 	"fmt"
 
 	"context"
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro/client"
 	hello "path/to/hello/proto"
 )
 

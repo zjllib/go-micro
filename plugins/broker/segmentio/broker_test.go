@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/zjllib/go-micro/v3/broker"
+	"github.com/zjllib/go-micro/broker"
 	segmentio "github.com/zjllib/go-micro/plugins/broker/segmentio/v3"
 )
 

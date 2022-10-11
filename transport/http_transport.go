@@ -16,10 +16,10 @@ import (
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 
-	maddr "github.com/zjllib/go-micro/v3/util/addr"
-	"github.com/zjllib/go-micro/v3/util/buf"
-	mnet "github.com/zjllib/go-micro/v3/util/net"
-	mls "github.com/zjllib/go-micro/v3/util/tls"
+	maddr "github.com/zjllib/go-micro/util/addr"
+	"github.com/zjllib/go-micro/util/buf"
+	mnet "github.com/zjllib/go-micro/util/net"
+	mls "github.com/zjllib/go-micro/util/tls"
 )
 
 type httpTransport struct {

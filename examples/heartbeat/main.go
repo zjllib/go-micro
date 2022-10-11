@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/util/log"
+	"github.com/zjllib/go-micro"
+	"github.com/zjllib/go-micro/util/log"
 )
 
 func main() {

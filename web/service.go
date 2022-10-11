@@ -14,15 +14,15 @@ import (
 	"time"
 
 	"github.com/urfave/cli/v2"
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/registry"
-	maddr "github.com/zjllib/go-micro/v3/util/addr"
-	"github.com/zjllib/go-micro/v3/util/backoff"
-	mhttp "github.com/zjllib/go-micro/v3/util/http"
-	mnet "github.com/zjllib/go-micro/v3/util/net"
-	signalutil "github.com/zjllib/go-micro/v3/util/signal"
-	mls "github.com/zjllib/go-micro/v3/util/tls"
+	"github.com/zjllib/go-micro"
+	"github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/registry"
+	maddr "github.com/zjllib/go-micro/util/addr"
+	"github.com/zjllib/go-micro/util/backoff"
+	mhttp "github.com/zjllib/go-micro/util/http"
+	mnet "github.com/zjllib/go-micro/util/net"
+	signalutil "github.com/zjllib/go-micro/util/signal"
+	mls "github.com/zjllib/go-micro/util/tls"
 )
 
 type service struct {

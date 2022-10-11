@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
+	"github.com/zjllib/go-micro/config"
+	"github.com/zjllib/go-micro/config/reader"
+	"github.com/zjllib/go-micro/config/reader/json"
+	"github.com/zjllib/go-micro/config/source/file"
 	yaml "github.com/zjllib/go-micro/plugins/config/encoder/yaml/v3"
-	"github.com/zjllib/go-micro/v3/config"
-	"github.com/zjllib/go-micro/v3/config/reader"
-	"github.com/zjllib/go-micro/v3/config/reader/json"
-	"github.com/zjllib/go-micro/v3/config/source/file"
 )
 
 func main() {

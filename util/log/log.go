@@ -1,5 +1,5 @@
 // Package log is a global internal logger
-// DEPRECATED: this is frozen package, use github.com/zjllib/go-micro/v3/logger
+// DEPRECATED: this is frozen package, use github.com/zjllib/go-micro/logger
 package log
 
 import (
@@ -7,8 +7,8 @@ import (
 	"os"
 	"sync/atomic"
 
-	dlog "github.com/zjllib/go-micro/v3/debug/log"
-	nlog "github.com/zjllib/go-micro/v3/logger"
+	dlog "github.com/zjllib/go-micro/debug/log"
+	nlog "github.com/zjllib/go-micro/logger"
 )
 
 // level is a log level

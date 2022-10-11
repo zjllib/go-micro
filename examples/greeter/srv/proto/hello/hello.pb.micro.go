@@ -11,8 +11,8 @@ import (
 
 import (
 	context "context"
-	client "github.com/zjllib/go-micro/v3/client"
-	server "github.com/zjllib/go-micro/v3/server"
+	client "github.com/zjllib/go-micro/client"
+	server "github.com/zjllib/go-micro/server"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

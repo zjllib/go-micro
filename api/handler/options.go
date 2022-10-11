@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"github.com/zjllib/go-micro/v3/api/router"
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro/api/router"
+	"github.com/zjllib/go-micro/client"
 )
 
 var (

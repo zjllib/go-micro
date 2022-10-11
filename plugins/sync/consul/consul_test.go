@@ -6,7 +6,7 @@ import (
 	gosync "sync"
 	"testing"
 
-	"github.com/zjllib/go-micro/v3/sync"
+	"github.com/zjllib/go-micro/sync"
 )
 
 const (

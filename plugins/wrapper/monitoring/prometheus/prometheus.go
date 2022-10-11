@@ -3,10 +3,10 @@ package prometheus
 import (
 	"context"
 	"fmt"
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/server"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

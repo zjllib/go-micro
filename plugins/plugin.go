@@ -11,13 +11,13 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/zjllib/go-micro/v3/broker"
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/cmd"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/selector"
-	"github.com/zjllib/go-micro/v3/server"
-	"github.com/zjllib/go-micro/v3/transport"
+	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/cmd"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/selector"
+	"github.com/zjllib/go-micro/server"
+	"github.com/zjllib/go-micro/transport"
 )
 
 // Plugin is a plugin loaded from a file

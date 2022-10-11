@@ -11,7 +11,7 @@ import (
 	gosync "sync"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/sync"
+	"github.com/zjllib/go-micro/sync"
 	"github.com/hashicorp/consul/api"
 	"github.com/hashicorp/consul/api/watch"
 	hclog "github.com/hashicorp/go-hclog"

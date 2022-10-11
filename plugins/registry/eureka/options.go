@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/registry"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/clientcredentials"
 )

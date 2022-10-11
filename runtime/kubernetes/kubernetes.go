@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	log "github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/runtime"
-	"github.com/zjllib/go-micro/v3/util/kubernetes/client"
+	log "github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/runtime"
+	"github.com/zjllib/go-micro/util/kubernetes/client"
 )
 
 // action to take on runtime service

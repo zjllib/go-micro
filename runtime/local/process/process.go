@@ -4,7 +4,7 @@ package process
 import (
 	"io"
 
-	"github.com/zjllib/go-micro/v3/runtime/local/build"
+	"github.com/zjllib/go-micro/runtime/local/build"
 )
 
 // Process manages a running process

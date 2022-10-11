@@ -1,11 +1,11 @@
 package main
 
 import (
-	proto "github.com/zjllib/go-micro/examples/v3/pubsub/srv/proto"
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/metadata"
-	"github.com/zjllib/go-micro/v3/server"
-	"github.com/zjllib/go-micro/v3/util/log"
+	"github.com/zjllib/go-micro"
+	proto "github.com/zjllib/go-micro/examples/pubsub/srv/proto"
+	"github.com/zjllib/go-micro/metadata"
+	"github.com/zjllib/go-micro/server"
+	"github.com/zjllib/go-micro/util/log"
 
 	"context"
 )

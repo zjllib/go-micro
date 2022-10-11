@@ -3,7 +3,7 @@ package runtimevar
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3/config/source"
+	"github.com/zjllib/go-micro/config/source"
 	"gocloud.dev/runtimevar"
 )
 

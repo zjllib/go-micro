@@ -3,7 +3,7 @@ package grpc
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/server"
 )
 
 func setServerOption(k, v interface{}) server.Option {

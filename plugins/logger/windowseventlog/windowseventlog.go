@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/zjllib/go-micro/v3/logger"
+	"github.com/zjllib/go-micro/logger"
 	"golang.org/x/sys/windows/svc/eventlog"
 )
 

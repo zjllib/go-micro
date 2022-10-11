@@ -5,10 +5,10 @@ import (
 	"context"
 	"sync"
 
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/codec"
-	"github.com/zjllib/go-micro/v3/metadata"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/codec"
+	"github.com/zjllib/go-micro/metadata"
+	"github.com/zjllib/go-micro/server"
 )
 
 type Stream interface {

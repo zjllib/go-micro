@@ -4,8 +4,8 @@ package loader
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3/config/reader"
-	"github.com/zjllib/go-micro/v3/config/source"
+	"github.com/zjllib/go-micro/config/reader"
+	"github.com/zjllib/go-micro/config/source"
 )
 
 // Loader manages loading sources

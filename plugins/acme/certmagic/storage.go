@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/store"
-	"github.com/zjllib/go-micro/v3/sync"
+	"github.com/zjllib/go-micro/store"
+	"github.com/zjllib/go-micro/sync"
 	"github.com/caddyserver/certmagic"
 )
 

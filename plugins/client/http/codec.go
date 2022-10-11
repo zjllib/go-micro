@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/zjllib/go-micro/v3/codec"
-	"github.com/zjllib/go-micro/v3/codec/jsonrpc"
-	"github.com/zjllib/go-micro/v3/codec/protorpc"
+	"github.com/zjllib/go-micro/codec"
+	"github.com/zjllib/go-micro/codec/jsonrpc"
+	"github.com/zjllib/go-micro/codec/protorpc"
 )
 
 type jsonCodec struct{}

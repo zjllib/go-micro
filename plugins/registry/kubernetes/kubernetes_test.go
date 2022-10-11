@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	log "github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/registry"
+	log "github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/registry"
 	"github.com/zjllib/go-micro/plugins/registry/kubernetes/v3/client"
 	"github.com/zjllib/go-micro/plugins/registry/kubernetes/v3/client/mock"
 )

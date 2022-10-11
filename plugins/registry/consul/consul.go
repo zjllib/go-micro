@@ -12,9 +12,9 @@ import (
 	"time"
 
 	consul "github.com/hashicorp/consul/api"
-	"github.com/zjllib/go-micro/v3/cmd"
-	"github.com/zjllib/go-micro/v3/registry"
-	mnet "github.com/zjllib/go-micro/v3/util/net"
+	"github.com/zjllib/go-micro/cmd"
+	"github.com/zjllib/go-micro/registry"
+	mnet "github.com/zjllib/go-micro/util/net"
 	hash "github.com/mitchellh/hashstructure"
 )
 

@@ -2,11 +2,11 @@ package server
 
 import (
 	"crypto/tls"
-	"github.com/zjllib/go-micro/v3/api/server/cors"
+	"github.com/zjllib/go-micro/api/server/cors"
 	"net/http"
 
-	"github.com/zjllib/go-micro/v3/api/resolver"
-	"github.com/zjllib/go-micro/v3/api/server/acme"
+	"github.com/zjllib/go-micro/api/resolver"
+	"github.com/zjllib/go-micro/api/server/acme"
 )
 
 type Option func(o *Options)

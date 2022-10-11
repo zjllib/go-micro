@@ -3,9 +3,9 @@ package shard_test
 import (
 	"testing"
 
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/selector"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/selector"
+	"github.com/zjllib/go-micro/registry"
 	"github.com/zjllib/go-micro/plugins/selector/shard/v3"
 )
 

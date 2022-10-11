@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 	
-	"github.com/zjllib/go-micro/v3/cmd"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/cmd"
+	"github.com/zjllib/go-micro/registry"
 	"github.com/nacos-group/nacos-sdk-go/v2/clients"
 	"github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client"
 	"github.com/nacos-group/nacos-sdk-go/v2/common/constant"

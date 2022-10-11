@@ -1,7 +1,7 @@
 package proxy
 
 import (
-	"github.com/zjllib/go-micro/v3/broker"
+	"github.com/zjllib/go-micro/broker"
 )
 
 type publication struct {

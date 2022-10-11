@@ -5,7 +5,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro/client"
 	"google.golang.org/grpc"
 )
 

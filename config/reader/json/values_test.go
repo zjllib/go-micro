@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/zjllib/go-micro/v3/config/source"
+	"github.com/zjllib/go-micro/config/source"
 )
 
 func TestValues(t *testing.T) {

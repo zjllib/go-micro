@@ -8,8 +8,8 @@ import (
 
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
-	"github.com/zjllib/go-micro/v3/codec"
-	"github.com/zjllib/go-micro/v3/codec/bytes"
+	"github.com/zjllib/go-micro/codec"
+	"github.com/zjllib/go-micro/codec/bytes"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/encoding"
 	"google.golang.org/grpc/metadata"

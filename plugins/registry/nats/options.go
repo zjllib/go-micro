@@ -3,7 +3,7 @@ package nats
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/registry"
 	"github.com/nats-io/nats.go"
 )
 

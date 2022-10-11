@@ -5,7 +5,7 @@ package windowseventlog
 import (
 	"testing"
 
-	"github.com/zjllib/go-micro/v3/logger"
+	"github.com/zjllib/go-micro/logger"
 	"github.com/stretchr/testify/assert"
 )
 

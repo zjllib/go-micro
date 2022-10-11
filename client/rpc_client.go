@@ -7,17 +7,17 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/zjllib/go-micro/v3/broker"
-	"github.com/zjllib/go-micro/v3/codec"
-	raw "github.com/zjllib/go-micro/v3/codec/bytes"
-	"github.com/zjllib/go-micro/v3/errors"
-	"github.com/zjllib/go-micro/v3/metadata"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/selector"
-	"github.com/zjllib/go-micro/v3/transport"
-	"github.com/zjllib/go-micro/v3/util/buf"
-	"github.com/zjllib/go-micro/v3/util/net"
-	"github.com/zjllib/go-micro/v3/util/pool"
+	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/codec"
+	raw "github.com/zjllib/go-micro/codec/bytes"
+	"github.com/zjllib/go-micro/errors"
+	"github.com/zjllib/go-micro/metadata"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/selector"
+	"github.com/zjllib/go-micro/transport"
+	"github.com/zjllib/go-micro/util/buf"
+	"github.com/zjllib/go-micro/util/net"
+	"github.com/zjllib/go-micro/util/pool"
 )
 
 type rpcClient struct {

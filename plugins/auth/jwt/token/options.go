@@ -3,7 +3,7 @@ package token
 import (
 	"time"
 
-	"github.com/zjllib/go-micro/v3/store"
+	"github.com/zjllib/go-micro/store"
 )
 
 type Options struct {

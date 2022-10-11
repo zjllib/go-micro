@@ -119,7 +119,7 @@ package helloworld
 import (
     "context"
 
-    log "github.com/zjllib/go-micro/v3/logger"
+    log "github.com/zjllib/go-micro/logger"
 
     "helloworld/greeter"
     pb "helloworld/proto"

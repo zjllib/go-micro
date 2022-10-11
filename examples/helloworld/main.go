@@ -4,8 +4,8 @@ import (
 	"context"
 	"log"
 
-	pb "github.com/zjllib/go-micro/examples/v3/helloworld/proto"
-	"github.com/zjllib/go-micro/v3"
+	"github.com/zjllib/go-micro"
+	pb "github.com/zjllib/go-micro/examples/helloworld/proto"
 )
 
 type Greeter struct{}

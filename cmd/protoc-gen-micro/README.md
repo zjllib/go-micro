@@ -112,7 +112,7 @@ message Response {
 }
 ```
 
-The proto generates a `RegisterGreeterHandler` function with a [api.Endpoint](https://godoc.org/github.com/zjllib/go-micro/v3/api#Endpoint). 
+The proto generates a `RegisterGreeterHandler` function with a [api.Endpoint](https://godoc.org/github.com/zjllib/go-micro/api#Endpoint). 
 
 ```diff
 func RegisterGreeterHandler(s server.Server, hdlr GreeterHandler, opts ...server.HandlerOption) error {

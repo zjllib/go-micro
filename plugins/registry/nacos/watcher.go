@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/registry"
 	"github.com/nacos-group/nacos-sdk-go/v2/model"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
 )

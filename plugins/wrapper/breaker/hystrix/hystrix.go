@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/afex/hystrix-go/hystrix"
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro/client"
 )
 
 type clientWrapper struct {

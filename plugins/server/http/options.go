@@ -3,10 +3,10 @@ package http
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3/broker"
-	"github.com/zjllib/go-micro/v3/codec"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/codec"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/server"
 )
 
 func newOptions(opt ...server.Option) server.Options {

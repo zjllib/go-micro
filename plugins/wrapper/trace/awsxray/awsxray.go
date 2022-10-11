@@ -4,9 +4,9 @@ package awsxray
 import (
 	"context"
 	"github.com/asim/go-awsxray"
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/server"
 )
 
 type xrayWrapper struct {

@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/util/backoff"
+	"github.com/zjllib/go-micro/util/backoff"
 )
 
 type BackoffFunc func(ctx context.Context, req Request, attempts int) (time.Duration, error)

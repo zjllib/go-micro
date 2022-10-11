@@ -5,11 +5,11 @@ import (
 	"crypto/tls"
 	"net"
 
-	"github.com/zjllib/go-micro/v3/broker"
-	"github.com/zjllib/go-micro/v3/codec"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/server"
-	"github.com/zjllib/go-micro/v3/transport"
+	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/codec"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/server"
+	"github.com/zjllib/go-micro/transport"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/encoding"
 )

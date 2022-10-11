@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3"
-	proto "github.com/zjllib/go-micro/v3/api/proto"
-	"github.com/zjllib/go-micro/v3/util/log"
+	"github.com/zjllib/go-micro"
+	proto "github.com/zjllib/go-micro/api/proto"
+	"github.com/zjllib/go-micro/util/log"
 )
 
 // All methods of Event will be executed when a message is received

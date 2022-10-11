@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/zjllib/go-micro/cmd/gomu/cmd"
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro"
+	"github.com/zjllib/go-micro/client"
 	"github.com/urfave/cli/v2"
 )
 

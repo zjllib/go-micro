@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/urfave/cli/v2"
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/web"
+	"github.com/zjllib/go-micro"
+	"github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/web"
 )
 
 func TestWeb(t *testing.T) {

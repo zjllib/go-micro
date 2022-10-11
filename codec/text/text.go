@@ -6,7 +6,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/zjllib/go-micro/v3/codec"
+	"github.com/zjllib/go-micro/codec"
 )
 
 type Codec struct {

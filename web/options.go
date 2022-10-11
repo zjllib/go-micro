@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/urfave/cli/v2"
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro"
+	"github.com/zjllib/go-micro/registry"
 )
 
 //Options for web

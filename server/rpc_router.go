@@ -18,9 +18,9 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/zjllib/go-micro/v3/codec"
-	merrors "github.com/zjllib/go-micro/v3/errors"
-	"github.com/zjllib/go-micro/v3/logger"
+	"github.com/zjllib/go-micro/codec"
+	merrors "github.com/zjllib/go-micro/errors"
+	"github.com/zjllib/go-micro/logger"
 )
 
 var (

@@ -3,8 +3,8 @@ package validator
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3/errors"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/errors"
+	"github.com/zjllib/go-micro/server"
 )
 
 type Validator interface {

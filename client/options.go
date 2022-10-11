@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/broker"
-	"github.com/zjllib/go-micro/v3/codec"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/selector"
-	"github.com/zjllib/go-micro/v3/transport"
+	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/codec"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/selector"
+	"github.com/zjllib/go-micro/transport"
 )
 
 type Options struct {

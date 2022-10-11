@@ -26,7 +26,7 @@ func Name(n string) Option {
 Here's an example at the top level
 
 ```
-import "github.com/zjllib/go-micro/v3"
+import "github.com/zjllib/go-micro"
 
 
 service := micro.NewService(

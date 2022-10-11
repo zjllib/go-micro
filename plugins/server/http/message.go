@@ -1,6 +1,6 @@
 package http
 
-import "github.com/zjllib/go-micro/v3/codec"
+import "github.com/zjllib/go-micro/codec"
 
 type httpMessage struct {
 	topic       string

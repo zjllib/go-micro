@@ -4,7 +4,7 @@ package router
 import (
 	"net/http"
 
-	"github.com/zjllib/go-micro/v3/api"
+	"github.com/zjllib/go-micro/api"
 )
 
 // Router is used to determine an endpoint for a request

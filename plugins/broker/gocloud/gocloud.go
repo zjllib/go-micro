@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/broker"
-	"github.com/zjllib/go-micro/v3/cmd"
+	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/cmd"
 	"github.com/streadway/amqp"
 	"gocloud.dev/gcp"
 	"gocloud.dev/pubsub"

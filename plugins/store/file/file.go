@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/store"
+	"github.com/zjllib/go-micro/store"
 	bolt "go.etcd.io/bbolt"
 )
 

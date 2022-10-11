@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	micro "github.com/zjllib/go-micro/v3"
-	broker "github.com/zjllib/go-micro/v3/broker"
-	server "github.com/zjllib/go-micro/v3/server"
+	micro "github.com/zjllib/go-micro"
+	broker "github.com/zjllib/go-micro/broker"
+	server "github.com/zjllib/go-micro/server"
 	rabbitmq "github.com/zjllib/go-micro/plugins/broker/rabbitmq/v3"
 )
 

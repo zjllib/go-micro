@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	proto "github.com/zjllib/go-micro/examples/v3/helloworld/proto"
-	"github.com/zjllib/go-micro/examples/v3/mocking/mock"
-	"github.com/zjllib/go-micro/v3"
 	"github.com/urfave/cli/v2"
+	"github.com/zjllib/go-micro"
+	proto "github.com/zjllib/go-micro/examples/helloworld/proto"
+	"github.com/zjllib/go-micro/examples/mocking/mock"
 )
 
 func main() {

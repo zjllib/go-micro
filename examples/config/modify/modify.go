@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/zjllib/go-micro/v3/config"
+	"github.com/zjllib/go-micro/config"
+	"github.com/zjllib/go-micro/config/source"
+	"github.com/zjllib/go-micro/config/source/file"
 	"github.com/zjllib/go-micro/plugins/config/encoder/toml/v3"
-	"github.com/zjllib/go-micro/v3/config/source"
-	"github.com/zjllib/go-micro/v3/config/source/file"
 )
 
 func main() {

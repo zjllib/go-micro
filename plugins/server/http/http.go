@@ -11,14 +11,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/broker"
-	"github.com/zjllib/go-micro/v3/codec"
-	"github.com/zjllib/go-micro/v3/codec/jsonrpc"
-	"github.com/zjllib/go-micro/v3/codec/protorpc"
-	"github.com/zjllib/go-micro/v3/cmd"
-	log "github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/codec"
+	"github.com/zjllib/go-micro/codec/jsonrpc"
+	"github.com/zjllib/go-micro/codec/protorpc"
+	"github.com/zjllib/go-micro/cmd"
+	log "github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/server"
 )
 
 var (

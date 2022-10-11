@@ -5,7 +5,7 @@ import (
 	"time"
 
 	consul "github.com/hashicorp/consul/api"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/registry"
 )
 
 // Connect specifies services should be registered as Consul Connect services

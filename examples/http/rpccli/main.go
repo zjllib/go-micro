@@ -4,10 +4,10 @@ import (
 	"context"
 	"log"
 
-	hello "github.com/zjllib/go-micro/examples/v3/greeter/srv/proto/hello"
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro"
+	"github.com/zjllib/go-micro/client"
+	hello "github.com/zjllib/go-micro/examples/greeter/srv/proto/hello"
+	"github.com/zjllib/go-micro/registry"
 )
 
 func main() {

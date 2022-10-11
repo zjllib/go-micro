@@ -12,17 +12,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/broker"
-	"github.com/zjllib/go-micro/v3/codec"
-	raw "github.com/zjllib/go-micro/v3/codec/bytes"
-	"github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/metadata"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/transport"
-	"github.com/zjllib/go-micro/v3/util/addr"
-	"github.com/zjllib/go-micro/v3/util/backoff"
-	mnet "github.com/zjllib/go-micro/v3/util/net"
-	"github.com/zjllib/go-micro/v3/util/socket"
+	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/codec"
+	raw "github.com/zjllib/go-micro/codec/bytes"
+	"github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/metadata"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/transport"
+	"github.com/zjllib/go-micro/util/addr"
+	"github.com/zjllib/go-micro/util/backoff"
+	mnet "github.com/zjllib/go-micro/util/net"
+	"github.com/zjllib/go-micro/util/socket"
 )
 
 type rpcServer struct {

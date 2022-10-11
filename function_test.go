@@ -5,9 +5,9 @@ import (
 	"sync"
 	"testing"
 
-	proto "github.com/zjllib/go-micro/v3/debug/proto"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/util/test"
+	proto "github.com/zjllib/go-micro/debug/proto"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/util/test"
 )
 
 func TestFunction(t *testing.T) {

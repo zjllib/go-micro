@@ -7,7 +7,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/zjllib/go-micro/v3/broker"
+	"github.com/zjllib/go-micro/broker"
 )
 
 func subscribe(t *testing.T, b broker.Broker, topic string, handle broker.Handler) broker.Subscriber {

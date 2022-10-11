@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/auth"
-	"github.com/zjllib/go-micro/v3/cmd"
+	"github.com/zjllib/go-micro/auth"
+	"github.com/zjllib/go-micro/cmd"
 	jwtToken "github.com/zjllib/go-micro/plugins/auth/jwt/v3/token"
 )
 

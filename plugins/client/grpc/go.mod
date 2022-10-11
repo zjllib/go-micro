@@ -4,7 +4,7 @@ go 1.16
 
 require (
 	github.com/zjllib/go-micro/plugins/registry/memory/v3 v3.0.0-20210630062103-c13bb07171bc
-	github.com/zjllib/go-micro/v3 v3.5.2-0.20210630062103-c13bb07171bc
+	github.com/zjllib/go-micro v3.5.2-0.20210630062103-c13bb07171bc
 	github.com/golang/protobuf v1.5.2
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c
 	google.golang.org/grpc v1.38.0
@@ -13,5 +13,5 @@ require (
 
 replace (
 	github.com/zjllib/go-micro/plugins/registry/memory/v3 => ../../../plugins/registry/memory
-	github.com/zjllib/go-micro/v3 => ../../../../go-micro
+	github.com/zjllib/go-micro => ../../../../go-micro
 )

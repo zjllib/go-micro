@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"context"
-	hello "github.com/zjllib/go-micro/examples/v3/greeter/srv/proto/hello"
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/transport"
+	"github.com/zjllib/go-micro"
+	hello "github.com/zjllib/go-micro/examples/greeter/srv/proto/hello"
+	"github.com/zjllib/go-micro/transport"
 )
 
 type Say struct{}

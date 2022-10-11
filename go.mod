@@ -1,4 +1,4 @@
-module github.com/zjllib/go-micro/v3
+module github.com/zjllib/go-micro
 
 go 1.16
 

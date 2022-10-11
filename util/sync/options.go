@@ -3,7 +3,7 @@ package sync
 import (
 	"time"
 
-	"github.com/zjllib/go-micro/v3/store"
+	"github.com/zjllib/go-micro/store"
 )
 
 // Options represents Sync options

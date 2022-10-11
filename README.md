@@ -1,4 +1,4 @@
-# Go Micro [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/zjllib/go-micro/v3?tab=doc)
+# Go Micro [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/zjllib/go-micro?tab=doc)
 
 Go Micro is a framework for distributed systems development.
 
@@ -51,7 +51,7 @@ are pluggable and allows Go Micro to be runtime agnostic. You can plugin any und
 To make use of Go Micro
 
 ```golang
-import "github.com/zjllib/go-micro/v3"
+import "github.com/zjllib/go-micro"
 
 // create a new service
 service := micro.NewService(

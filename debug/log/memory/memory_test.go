@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/zjllib/go-micro/v3/debug/log"
+	"github.com/zjllib/go-micro/debug/log"
 )
 
 func TestLogger(t *testing.T) {

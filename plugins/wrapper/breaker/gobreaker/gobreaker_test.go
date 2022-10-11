@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/selector"
-	"github.com/zjllib/go-micro/v3/errors"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/selector"
+	"github.com/zjllib/go-micro/errors"
 	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
 	"github.com/sony/gobreaker"
 )

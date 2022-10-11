@@ -4,10 +4,10 @@ package config
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3/config/loader"
-	"github.com/zjllib/go-micro/v3/config/reader"
-	"github.com/zjllib/go-micro/v3/config/source"
-	"github.com/zjllib/go-micro/v3/config/source/file"
+	"github.com/zjllib/go-micro/config/loader"
+	"github.com/zjllib/go-micro/config/reader"
+	"github.com/zjllib/go-micro/config/source"
+	"github.com/zjllib/go-micro/config/source/file"
 )
 
 // Config is an interface abstraction for dynamic configuration

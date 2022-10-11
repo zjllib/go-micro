@@ -7,17 +7,17 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/cmd"
-	"github.com/zjllib/go-micro/v3/debug/handler"
-	"github.com/zjllib/go-micro/v3/debug/stats"
-	"github.com/zjllib/go-micro/v3/debug/trace"
-	"github.com/zjllib/go-micro/v3/logger"
-	plugin "github.com/zjllib/go-micro/v3/plugins"
-	"github.com/zjllib/go-micro/v3/server"
-	"github.com/zjllib/go-micro/v3/store"
-	signalutil "github.com/zjllib/go-micro/v3/util/signal"
-	"github.com/zjllib/go-micro/v3/util/wrapper"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/cmd"
+	"github.com/zjllib/go-micro/debug/handler"
+	"github.com/zjllib/go-micro/debug/stats"
+	"github.com/zjllib/go-micro/debug/trace"
+	"github.com/zjllib/go-micro/logger"
+	plugin "github.com/zjllib/go-micro/plugins"
+	"github.com/zjllib/go-micro/server"
+	"github.com/zjllib/go-micro/store"
+	signalutil "github.com/zjllib/go-micro/util/signal"
+	"github.com/zjllib/go-micro/util/wrapper"
 )
 
 type service struct {

@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/zjllib/go-micro/v3/selector"
-	"github.com/zjllib/go-micro/v3/cmd"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/selector"
+	"github.com/zjllib/go-micro/cmd"
+	"github.com/zjllib/go-micro/registry"
 )
 
 const (

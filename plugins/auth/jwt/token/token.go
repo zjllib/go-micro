@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/auth"
+	"github.com/zjllib/go-micro/auth"
 )
 
 var (

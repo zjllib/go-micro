@@ -3,8 +3,8 @@ package mock
 import (
 	"context"
 
-	proto "github.com/zjllib/go-micro/examples/v3/helloworld/proto"
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro/client"
+	proto "github.com/zjllib/go-micro/examples/helloworld/proto"
 )
 
 type mockGreeterService struct {

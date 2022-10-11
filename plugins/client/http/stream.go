@@ -11,7 +11,7 @@ import (
 	"net/url"
 	"sync"
 
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro/client"
 )
 
 // Implements the streamer interface

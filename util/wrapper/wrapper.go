@@ -4,12 +4,12 @@ import (
 	"context"
 	"strings"
 
-	"github.com/zjllib/go-micro/v3/auth"
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/debug/stats"
-	"github.com/zjllib/go-micro/v3/debug/trace"
-	"github.com/zjllib/go-micro/v3/metadata"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/auth"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/debug/stats"
+	"github.com/zjllib/go-micro/debug/trace"
+	"github.com/zjllib/go-micro/metadata"
+	"github.com/zjllib/go-micro/server"
 )
 
 type fromServiceWrapper struct {

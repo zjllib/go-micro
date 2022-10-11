@@ -10,10 +10,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/transport"
-	maddr "github.com/zjllib/go-micro/v3/util/addr"
-	mnet "github.com/zjllib/go-micro/v3/util/net"
-	"github.com/zjllib/go-micro/v3/cmd"
+	"github.com/zjllib/go-micro/transport"
+	maddr "github.com/zjllib/go-micro/util/addr"
+	mnet "github.com/zjllib/go-micro/util/net"
+	"github.com/zjllib/go-micro/cmd"
 )
 
 type memorySocket struct {

@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/zjllib/go-micro/v3/broker"
-	log "github.com/zjllib/go-micro/v3/logger"
+	"github.com/zjllib/go-micro/broker"
+	log "github.com/zjllib/go-micro/logger"
 )
 
 const (

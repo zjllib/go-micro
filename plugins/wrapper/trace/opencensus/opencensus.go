@@ -6,10 +6,10 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"github.com/zjllib/go-micro/v3/client"
-	log "github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/metadata"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/client"
+	log "github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/metadata"
+	"github.com/zjllib/go-micro/server"
 	"go.opencensus.io/trace"
 	"go.opencensus.io/trace/propagation"
 )

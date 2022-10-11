@@ -2,12 +2,12 @@
 package datadog
 
 import (
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/registry"
 
 	"context"
 
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/server"
 )
 
 var noDebugStack = true

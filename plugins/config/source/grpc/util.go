@@ -3,7 +3,7 @@ package grpc
 import (
 	"time"
 
-	"github.com/zjllib/go-micro/v3/config/source"
+	"github.com/zjllib/go-micro/config/source"
 	proto "github.com/zjllib/go-micro/plugins/config/source/grpc/v3/proto"
 )
 

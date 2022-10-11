@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/zjllib/go-micro/v3/registry"
-	regutil "github.com/zjllib/go-micro/v3/util/registry"
+	"github.com/zjllib/go-micro/registry"
+	regutil "github.com/zjllib/go-micro/util/registry"
 	"github.com/hashicorp/consul/api"
 	"github.com/hashicorp/consul/api/watch"
 )

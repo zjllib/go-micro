@@ -1,8 +1,8 @@
 package http
 
 import (
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/codec"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/codec"
 )
 
 type httpRequest struct {

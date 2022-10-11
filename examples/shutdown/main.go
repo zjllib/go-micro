@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"context"
-	"github.com/zjllib/go-micro/v3"
+	"github.com/zjllib/go-micro"
 )
 
 func main() {

@@ -9,11 +9,11 @@ import (
 
 	"github.com/juju/ratelimit"
 	bmemory "github.com/zjllib/go-micro/plugins/broker/memory/v3"
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/selector"
-	"github.com/zjllib/go-micro/v3/errors"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/selector"
+	"github.com/zjllib/go-micro/errors"
 	rmemory "github.com/zjllib/go-micro/plugins/registry/memory/v3"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/server"
 	tmemory "github.com/zjllib/go-micro/plugins/transport/memory/v3"
 )
 

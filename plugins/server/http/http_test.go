@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/server"
 )
 
 func TestHTTPServer(t *testing.T) {

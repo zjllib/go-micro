@@ -4,17 +4,17 @@ import (
 	"context"
 	"testing"
 
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/selector"
-	microerr "github.com/zjllib/go-micro/v3/errors"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/selector"
+	microerr "github.com/zjllib/go-micro/errors"
 	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/server"
 	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/mocktracer"
 	"github.com/stretchr/testify/assert"
 
-	cli "github.com/zjllib/go-micro/v3/client"
-	srv "github.com/zjllib/go-micro/v3/server"
+	cli "github.com/zjllib/go-micro/client"
+	srv "github.com/zjllib/go-micro/server"
 )
 
 type Test interface {

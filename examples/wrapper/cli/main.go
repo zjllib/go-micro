@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"context"
-	proto "github.com/zjllib/go-micro/examples/v3/service/proto"
-	"github.com/zjllib/go-micro/v3"
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro"
+	"github.com/zjllib/go-micro/client"
+	proto "github.com/zjllib/go-micro/examples/service/proto"
 )
 
 // log wrapper logs every time a request is made

@@ -3,9 +3,9 @@ package grpc
 import (
 	"runtime/debug"
 
-	"github.com/zjllib/go-micro/v3/errors"
-	"github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/transport"
+	"github.com/zjllib/go-micro/errors"
+	"github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/transport"
 	pb "github.com/zjllib/go-micro/plugins/transport/grpc/v3/proto"
 	"google.golang.org/grpc/peer"
 )

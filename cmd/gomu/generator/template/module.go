@@ -6,7 +6,7 @@ var Module = `module {{.Vendor}}{{.Service}}{{if .Client}}-client{{end}}
 go 1.16
 
 require (
-	github.com/zjllib/go-micro/v3 v3.5.2
+	github.com/zjllib/go-micro v3.5.2
 )
 
 // This can be removed once etcd becomes go gettable, version 3.4 and 3.5 is not,

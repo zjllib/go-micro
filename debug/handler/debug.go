@@ -5,12 +5,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/debug/log"
-	proto "github.com/zjllib/go-micro/v3/debug/proto"
-	"github.com/zjllib/go-micro/v3/debug/stats"
-	"github.com/zjllib/go-micro/v3/debug/trace"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/debug/log"
+	proto "github.com/zjllib/go-micro/debug/proto"
+	"github.com/zjllib/go-micro/debug/stats"
+	"github.com/zjllib/go-micro/debug/trace"
+	"github.com/zjllib/go-micro/server"
 )
 
 // NewHandler returns an instance of the Debug Handler

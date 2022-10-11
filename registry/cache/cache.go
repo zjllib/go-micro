@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/registry"
-	util "github.com/zjllib/go-micro/v3/util/registry"
+	"github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/registry"
+	util "github.com/zjllib/go-micro/util/registry"
 	"golang.org/x/sync/singleflight"
 )
 

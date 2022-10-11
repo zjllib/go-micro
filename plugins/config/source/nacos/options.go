@@ -3,7 +3,7 @@ package nacos
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3/config/source"
+	"github.com/zjllib/go-micro/config/source"
 	"github.com/nacos-group/nacos-sdk-go/v2/common/constant"
 )
 

@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/zjllib/go-micro/examples/v3/cache/handler"
-	pb "github.com/zjllib/go-micro/examples/v3/cache/proto"
+	"github.com/zjllib/go-micro/examples/cache/handler"
+	pb "github.com/zjllib/go-micro/examples/cache/proto"
 
-	"github.com/zjllib/go-micro/v3"
-	log "github.com/zjllib/go-micro/v3/logger"
+	"github.com/zjllib/go-micro"
+	log "github.com/zjllib/go-micro/logger"
 )
 
 var (

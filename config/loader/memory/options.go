@@ -1,9 +1,9 @@
 package memory
 
 import (
-	"github.com/zjllib/go-micro/v3/config/loader"
-	"github.com/zjllib/go-micro/v3/config/reader"
-	"github.com/zjllib/go-micro/v3/config/source"
+	"github.com/zjllib/go-micro/config/loader"
+	"github.com/zjllib/go-micro/config/reader"
+	"github.com/zjllib/go-micro/config/source"
 )
 
 // WithSource appends a source to list of sources

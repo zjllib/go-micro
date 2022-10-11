@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 
 	"github.com/markbates/pkger"
-	"github.com/zjllib/go-micro/v3/config/source"
+	"github.com/zjllib/go-micro/config/source"
 )
 
 type file struct {

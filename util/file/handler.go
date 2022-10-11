@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/zjllib/go-micro/v3/errors"
-	"github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/server"
-	proto "github.com/zjllib/go-micro/v3/util/file/proto"
+	"github.com/zjllib/go-micro/errors"
+	"github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/server"
+	proto "github.com/zjllib/go-micro/util/file/proto"
 	"golang.org/x/net/context"
 )
 

@@ -4,16 +4,16 @@ import (
 	"bytes"
 	errs "errors"
 
-	"github.com/zjllib/go-micro/v3/codec"
-	raw "github.com/zjllib/go-micro/v3/codec/bytes"
-	"github.com/zjllib/go-micro/v3/codec/grpc"
-	"github.com/zjllib/go-micro/v3/codec/json"
-	"github.com/zjllib/go-micro/v3/codec/jsonrpc"
-	"github.com/zjllib/go-micro/v3/codec/proto"
-	"github.com/zjllib/go-micro/v3/codec/protorpc"
-	"github.com/zjllib/go-micro/v3/errors"
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/transport"
+	"github.com/zjllib/go-micro/codec"
+	raw "github.com/zjllib/go-micro/codec/bytes"
+	"github.com/zjllib/go-micro/codec/grpc"
+	"github.com/zjllib/go-micro/codec/json"
+	"github.com/zjllib/go-micro/codec/jsonrpc"
+	"github.com/zjllib/go-micro/codec/proto"
+	"github.com/zjllib/go-micro/codec/protorpc"
+	"github.com/zjllib/go-micro/errors"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/transport"
 )
 
 const (

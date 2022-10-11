@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/lib/pq"
-	"github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/store"
+	"github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/store"
 	"github.com/pkg/errors"
 )
 

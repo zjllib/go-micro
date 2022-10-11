@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/urfave/cli/v2"
-	"github.com/zjllib/go-micro/v3/config/source"
+	"github.com/zjllib/go-micro/config/source"
 )
 
 type contextKey struct{}

@@ -4,7 +4,7 @@ package nacos
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/registry"
 	"github.com/nacos-group/nacos-sdk-go/v2/common/constant"
 )
 

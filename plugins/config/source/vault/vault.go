@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/hashicorp/vault/api"
-	"github.com/zjllib/go-micro/v3/config/source"
+	"github.com/zjllib/go-micro/config/source"
 )
 
 // Currently a single vault reader

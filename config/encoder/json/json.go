@@ -3,7 +3,7 @@ package json
 import (
 	"encoding/json"
 
-	"github.com/zjllib/go-micro/v3/config/encoder"
+	"github.com/zjllib/go-micro/config/encoder"
 )
 
 type jsonEncoder struct{}

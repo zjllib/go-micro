@@ -78,7 +78,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/zjllib/go-micro/v3/services/currency"
+	"github.com/zjllib/go-micro/services/currency"
 )
 
 var (

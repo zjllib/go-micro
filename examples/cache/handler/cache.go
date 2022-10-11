@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/zjllib/go-micro/v3/cache"
-	log "github.com/zjllib/go-micro/v3/logger"
+	"github.com/zjllib/go-micro/cache"
+	log "github.com/zjllib/go-micro/logger"
 
-	pb "github.com/zjllib/go-micro/examples/v3/cache/proto"
+	pb "github.com/zjllib/go-micro/examples/cache/proto"
 )
 
 type Cache struct {

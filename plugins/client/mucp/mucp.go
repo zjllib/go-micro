@@ -2,8 +2,8 @@
 package mucp
 
 import (
-	"github.com/zjllib/go-micro/v3/cmd"
-	"github.com/zjllib/go-micro/v3/client"
+	"github.com/zjllib/go-micro/cmd"
+	"github.com/zjllib/go-micro/client"
 )
 
 func init() {

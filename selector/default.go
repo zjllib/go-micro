@@ -3,8 +3,8 @@ package selector
 import (
 	"time"
 
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/registry/cache"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/registry/cache"
 )
 
 type registrySelector struct {

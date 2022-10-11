@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/errors"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/errors"
 )
 
 var (

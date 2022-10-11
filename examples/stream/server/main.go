@@ -6,8 +6,8 @@ import (
 	"io"
 	"log"
 
-	proto "github.com/zjllib/go-micro/examples/v3/stream/server/proto"
-	"github.com/zjllib/go-micro/v3"
+	"github.com/zjllib/go-micro"
+	proto "github.com/zjllib/go-micro/examples/stream/server/proto"
 )
 
 type Streamer struct{}

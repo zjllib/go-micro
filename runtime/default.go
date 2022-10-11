@@ -14,8 +14,8 @@ import (
 	"time"
 
 	"github.com/nxadm/tail"
-	"github.com/zjllib/go-micro/v3/logger"
-	"github.com/zjllib/go-micro/v3/runtime/local/git"
+	"github.com/zjllib/go-micro/logger"
+	"github.com/zjllib/go-micro/runtime/local/git"
 )
 
 // defaultNamespace to use if not provided as an option

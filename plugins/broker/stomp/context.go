@@ -3,7 +3,7 @@ package stomp
 import (
 	"context"
 
-	"github.com/zjllib/go-micro/v3/broker"
+	"github.com/zjllib/go-micro/broker"
 )
 
 // Context related keys and funcs

@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/zjllib/go-micro/v3/transport"
+	"github.com/zjllib/go-micro/transport"
 )
 
 // Handle registers the handler for the given pattern.

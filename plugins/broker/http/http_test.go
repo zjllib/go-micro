@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/zjllib/go-micro/v3/broker"
-	"github.com/zjllib/go-micro/v3/registry"
+	"github.com/zjllib/go-micro/broker"
+	"github.com/zjllib/go-micro/registry"
 	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
 )
 

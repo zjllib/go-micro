@@ -3,12 +3,12 @@ package main
 import (
 	"log"
 
+	"github.com/zjllib/go-micro"
 	httpServer "github.com/zjllib/go-micro/plugins/server/http/v3"
-	"github.com/zjllib/go-micro/v3"
 
-	"github.com/zjllib/go-micro/v3/registry"
-	"github.com/zjllib/go-micro/v3/server"
 	"github.com/gin-gonic/gin"
+	"github.com/zjllib/go-micro/registry"
+	"github.com/zjllib/go-micro/server"
 )
 
 const (

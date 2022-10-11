@@ -5,8 +5,8 @@ import (
 
 	"github.com/hashicorp/consul/api"
 	"github.com/hashicorp/consul/api/watch"
-	"github.com/zjllib/go-micro/v3/config/encoder"
-	"github.com/zjllib/go-micro/v3/config/source"
+	"github.com/zjllib/go-micro/config/encoder"
+	"github.com/zjllib/go-micro/config/source"
 )
 
 type watcher struct {

@@ -9,16 +9,16 @@ import (
 
 	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
 
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/selector"
-	microerr "github.com/zjllib/go-micro/v3/errors"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/selector"
+	microerr "github.com/zjllib/go-micro/errors"
 	"github.com/zjllib/go-micro/plugins/registry/memory/v3"
-	"github.com/zjllib/go-micro/v3/server"
+	"github.com/zjllib/go-micro/server"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/mocktracer"
 
-	cli "github.com/zjllib/go-micro/v3/client"
-	srv "github.com/zjllib/go-micro/v3/server"
+	cli "github.com/zjllib/go-micro/client"
+	srv "github.com/zjllib/go-micro/server"
 )
 
 type Test interface {

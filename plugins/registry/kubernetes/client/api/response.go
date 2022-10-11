@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	log "github.com/zjllib/go-micro/v3/logger"
+	log "github.com/zjllib/go-micro/logger"
 )
 
 // Errors ...

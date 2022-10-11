@@ -1,7 +1,7 @@
 package grpc
 
 import (
-	"github.com/zjllib/go-micro/v3/transport"
+	"github.com/zjllib/go-micro/transport"
 	pb "github.com/zjllib/go-micro/plugins/transport/grpc/v3/proto"
 	"google.golang.org/grpc"
 )

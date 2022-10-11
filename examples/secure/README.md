@@ -20,8 +20,8 @@ Create a tls.go file
 package main
 
 import (
-	"github.com/zjllib/go-micro/v3/client"
-	"github.com/zjllib/go-micro/v3/transport"
+	"github.com/zjllib/go-micro/client"
+	"github.com/zjllib/go-micro/transport"
 )
 
 func init() {
