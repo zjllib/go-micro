@@ -27,3 +27,7 @@ Curl your request at the gateway (localhost:8080)
 ```
 curl -H "content-type: application/json" -d '{"name": "john"}' http://localhost:8080/greeter/hello
 ```
+
+
+#### 参考
+ - https://blog.csdn.net/Mr_XiMu/article/details/125000670
