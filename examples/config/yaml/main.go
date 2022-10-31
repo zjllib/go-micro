@@ -8,6 +8,7 @@ import (
 	"github.com/zjllib/go-micro/config/reader/json"
 	"github.com/zjllib/go-micro/config/source/file"
 	"github.com/zjllib/go-micro/plugins/config/encoder/yaml"
+	"github.com/zjllib/go-micro/plugins/config/source/etcd"
 )
 
 func main() {
@@ -26,6 +27,7 @@ func main() {
 	// load the config from a file source
 	if err := c.Load(file.NewSource(
 		file.WithPath("./config.yaml"),
+		etcd.WithAddress(),
 	)); err != nil {
 		fmt.Println(err)
 		return

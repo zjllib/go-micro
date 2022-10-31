@@ -16,7 +16,7 @@ import (
 	log "github.com/zjllib/go-micro/logger"
 	yaml "github.com/zjllib/go-micro/plugins/config/encoder/yaml"
 	proto "github.com/zjllib/go-micro/plugins/config/source/grpc/proto"
-	grpc "google.golang.org/grpc"
+	"google.golang.org/grpc"
 )
 
 var (

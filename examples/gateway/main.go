@@ -14,7 +14,7 @@ import (
 
 var (
 	// the go.micro.srv.greeter address
-	endpoint = flag.String("endpoint", "localhost:9090", "go.micro.srv.greeter address")
+	endpoint = flag.String("endpoint", "localhost:8989", "go.micro.srv.greeter address")
 )
 
 func run() error {

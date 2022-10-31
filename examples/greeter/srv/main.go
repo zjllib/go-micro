@@ -28,7 +28,8 @@ func main() {
 	}()
 
 	service := micro.NewService(
-		micro.Name("go.micro.srv.greeter"),
+		micro.Name("go.micro.greeter"),
+		micro.Address(":9091"),
 	)
 
 	// optionally setup command line usage
