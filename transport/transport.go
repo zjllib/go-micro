@@ -5,6 +5,18 @@ import (
 	"time"
 )
 
+type TransportProtocol string
+
+const (
+	TCP  TransportProtocol = "tcp"
+	KCP  TransportProtocol = "kcp"
+	UDP  TransportProtocol = "udp"
+	WS   TransportProtocol = "websocket"
+	HTTP TransportProtocol = "http"
+	QUIC TransportProtocol = "quic"
+	RPC  TransportProtocol = "rpc"
+)
+
 // Transport is an interface which is used for communication between
 // services. It uses connection based socket send/recv semantics and
 // has various implementations; http, grpc, quic.

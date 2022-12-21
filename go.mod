@@ -98,10 +98,10 @@ require (
 	golang.org/x/oauth2 v0.0.0-20220722155238-128564f6959c
 	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4
 	golang.org/x/sys v0.0.0-20221010170243-090e33056c14
-	golang.org/x/text v0.3.7
+	golang.org/x/text v0.4.0
 	google.golang.org/api v0.91.0
 	google.golang.org/genproto v0.0.0-20220802133213-ce4fa296bf78
-	google.golang.org/grpc v1.48.0
+	google.golang.org/grpc v1.51.0
 	google.golang.org/grpc/examples v0.0.0-20221011233738-e81d0a276fb3
 	google.golang.org/protobuf v1.28.1
 	gopkg.in/DataDog/dd-trace-go.v1 v1.42.1

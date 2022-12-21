@@ -12,9 +12,9 @@ import (
 	"github.com/zjllib/go-micro/errors"
 	bmemory "github.com/zjllib/go-micro/plugins/broker/memory"
 	rmemory "github.com/zjllib/go-micro/plugins/registry/memory"
-	tmemory "github.com/zjllib/go-micro/plugins/transport/memory"
 	"github.com/zjllib/go-micro/selector"
 	"github.com/zjllib/go-micro/server"
+	tmemory "github.com/zjllib/go-micro/transport/memory"
 )
 
 type testHandler struct{}

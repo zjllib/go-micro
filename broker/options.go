@@ -8,6 +8,11 @@ import (
 	"github.com/zjllib/go-micro/registry"
 )
 
+const (
+	SIDE_PRODUCER = 0x0001 //producer side
+	SIDE_CONSUMER = 0x0002 //producer side
+)
+
 type Options struct {
 	Addrs  []string
 	Secure bool
@@ -23,6 +28,9 @@ type Options struct {
 	// Other options for implementations of the interface
 	// can be stored in a context
 	Context context.Context
+
+	//default p&c
+	Side int
 }
 
 type PublishOptions struct {
@@ -132,5 +140,17 @@ func TLSConfig(t *tls.Config) Option {
 func SubscribeContext(ctx context.Context) SubscribeOption {
 	return func(o *SubscribeOptions) {
 		o.Context = ctx
+	}
+}
+
+func WithProducer() Option {
+	return func(options *Options) {
+		options.Side |= SIDE_PRODUCER
+	}
+}
+
+func WithConsumer() Option {
+	return func(options *Options) {
+		options.Side |= SIDE_CONSUMER
 	}
 }
