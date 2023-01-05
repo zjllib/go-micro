@@ -10,7 +10,6 @@ import (
 	"github.com/google/uuid"
 	"github.com/nsqio/go-nsq"
 	"github.com/zjllib/go-micro/broker"
-	"github.com/zjllib/go-micro/cmd"
 	"github.com/zjllib/go-micro/codec/json"
 )
 
@@ -24,14 +23,6 @@ type nsqBroker struct {
 	running bool
 	p       []*nsq.Producer
 	c       []*subscriber
-}
-
-type publication struct {
-	topic string
-	m     *broker.Message
-	nm    *nsq.Message
-	opts  broker.PublishOptions
-	err   error
 }
 
 type subscriber struct {
@@ -49,11 +40,6 @@ type subscriber struct {
 var (
 	DefaultConcurrentHandlers = 1
 )
-
-func init() {
-	rand.Seed(time.Now().UnixNano())
-	cmd.DefaultBrokers["nsq"] = NewBroker
-}
 
 func (n *nsqBroker) Init(opts ...broker.Option) error {
 	for _, o := range opts {
@@ -73,29 +59,7 @@ func (n *nsqBroker) Init(opts ...broker.Option) error {
 	}
 
 	n.addrs = addrs
-	n.configure(n.opts.Context)
 	return nil
-}
-
-func (n *nsqBroker) configure(ctx context.Context) {
-	if v, ok := ctx.Value(lookupdAddrsKey{}).([]string); ok {
-		n.lookupdAddrs = v
-	}
-
-	if v, ok := ctx.Value(consumerOptsKey{}).([]string); ok {
-		cfgFlag := &nsq.ConfigFlag{Config: n.config}
-		for _, opt := range v {
-			cfgFlag.Set(opt)
-		}
-	}
-}
-
-func (n *nsqBroker) Options() broker.Options {
-	return n.opts
-}
-
-func (n *nsqBroker) Address() string {
-	return n.addrs[rand.Intn(len(n.addrs))]
 }
 
 func (n *nsqBroker) Connect() error {
@@ -187,7 +151,7 @@ func (n *nsqBroker) Disconnect() error {
 	return nil
 }
 
-func (n *nsqBroker) Publish(topic string, message *broker.Message, opts ...broker.PublishOption) error {
+func (n *nsqBroker) Publish(topic string, body []byte, opts ...broker.PublishOption) error {
 	p := n.p[rand.Intn(len(n.p))]
 
 	options := broker.PublishOptions{}
@@ -208,25 +172,25 @@ func (n *nsqBroker) Publish(topic string, message *broker.Message, opts ...broke
 		}
 	}
 
-	b, err := n.opts.Codec.Marshal(message)
-	if err != nil {
-		return err
-	}
+	//b, err := n.opts.Codec.Marshal(message)
+	//if err != nil {
+	//	return err
+	//}
 
 	if doneChan != nil {
 		if delay > 0 {
-			return p.DeferredPublishAsync(topic, delay, b, doneChan)
+			return p.DeferredPublishAsync(topic, delay, body, doneChan)
 		}
-		return p.PublishAsync(topic, b, doneChan)
+		return p.PublishAsync(topic, body, doneChan)
 	} else {
 		if delay > 0 {
-			return p.DeferredPublish(topic, delay, b)
+			return p.DeferredPublish(topic, delay, body)
 		}
-		return p.Publish(topic, b)
+		return p.Publish(topic, body)
 	}
 }
 
-func (n *nsqBroker) Subscribe(topic string, handler broker.Handler, opts ...broker.SubscribeOption) (broker.Subscriber, error) {
+func (n *nsqBroker) Subscribe(topic string, handler broker.Handler, opts ...broker.SubscribeOption) error {
 	options := broker.SubscribeOptions{
 		AutoAck: true,
 	}
@@ -253,23 +217,17 @@ func (n *nsqBroker) Subscribe(topic string, handler broker.Handler, opts ...brok
 
 	c, err := nsq.NewConsumer(topic, channel, &config)
 	if err != nil {
-		return nil, err
+		return err
 	}
 
 	h := nsq.HandlerFunc(func(nm *nsq.Message) error {
 		if !options.AutoAck {
 			nm.DisableAutoResponse()
 		}
-
-		var m broker.Message
-
-		if err := n.opts.Codec.Unmarshal(nm.Body, &m); err != nil {
-			return err
-		}
-
-		p := &publication{topic: topic, m: &m}
-		p.err = handler(p)
-		return p.err
+		return handler(message{
+			nm:    nm,
+			codec: n.opts.Codec,
+		})
 	})
 
 	c.AddConcurrentHandlers(h, concurrency)
@@ -280,57 +238,13 @@ func (n *nsqBroker) Subscribe(topic string, handler broker.Handler, opts ...brok
 		err = c.ConnectToNSQDs(n.addrs)
 	}
 	if err != nil {
-		return nil, err
+		return err
 	}
 
-	sub := &subscriber{
-		c:     c,
-		opts:  options,
-		topic: topic,
-		h:     h,
-		n:     concurrency,
-	}
-
-	n.c = append(n.c, sub)
-
-	return sub, nil
-}
-
-func (n *nsqBroker) String() string {
-	return "nsq"
-}
-
-func (p *publication) Topic() string {
-	return p.topic
-}
-
-func (p *publication) Message() *broker.Message {
-	return p.m
-}
-
-func (p *publication) Ack() error {
-	p.nm.Finish()
 	return nil
 }
 
-func (p *publication) Error() error {
-	return p.err
-}
-
-func (s *subscriber) Options() broker.SubscribeOptions {
-	return s.opts
-}
-
-func (s *subscriber) Topic() string {
-	return s.topic
-}
-
-func (s *subscriber) Unsubscribe() error {
-	s.c.Stop()
-	return nil
-}
-
-func NewBroker(opts ...broker.Option) broker.Broker {
+func NewBroker(opts ...broker.Option) broker.IBroker {
 	options := broker.Options{
 		// Default codec
 		Codec: json.Marshaler{},
@@ -359,7 +273,6 @@ func NewBroker(opts ...broker.Option) broker.Broker {
 		opts:   options,
 		config: nsq.NewConfig(),
 	}
-	n.configure(n.opts.Context)
 
 	return n
 }
