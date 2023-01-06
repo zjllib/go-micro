@@ -10,9 +10,9 @@ import (
 )
 
 type environment struct {
-	registryOne   registry.Registry
-	registryTwo   registry.Registry
-	registryThree registry.Registry
+	registryOne   registry.IRegistry
+	registryTwo   registry.IRegistry
+	registryThree registry.IRegistry
 
 	serviceOne registry.Service
 	serviceTwo registry.Service
@@ -31,9 +31,9 @@ func TestMain(m *testing.M) {
 		return
 	}
 
-	e.registryOne = nats.NewRegistry(registry.Addrs(natsURL), nats.Quorum(1))
-	e.registryTwo = nats.NewRegistry(registry.Addrs(natsURL), nats.Quorum(1))
-	e.registryThree = nats.NewRegistry(registry.Addrs(natsURL), nats.Quorum(1))
+	e.registryOne = nats.Newregistry.IRegistry.Addrs(natsURL), nats.Quorum(1))
+	e.registryTwo = nats.Newregistry.IRegistry.Addrs(natsURL), nats.Quorum(1))
+	e.registryThree = nats.Newregistry.IRegistry.Addrs(natsURL), nats.Quorum(1))
 
 	e.serviceOne.Name = "one"
 	e.serviceOne.Version = "default"

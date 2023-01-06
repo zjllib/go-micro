@@ -17,7 +17,7 @@ func main() {
 func CallGrpcByHttp() {
 	// create a new service
 	service := micro.NewService(
-		micro.Registry(registry.NewRegistry()),
+		micro.registry.IRegistry.NewRegistry()),
 	)
 	// parse command line flags
 	service.Init()

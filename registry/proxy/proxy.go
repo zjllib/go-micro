@@ -40,7 +40,7 @@ func configure(s *proxy, opts ...registry.Option) error {
 	return nil
 }
 
-func newRegistry(opts ...registry.Option) registry.Registry {
+func newRegistry(opts ...registry.Option) registry.IRegistry {
 	s := &proxy{
 		opts: registry.Options{},
 	}
@@ -249,6 +249,6 @@ func (s *proxy) String() string {
 	return "proxy"
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	return newRegistry(opts...)
 }

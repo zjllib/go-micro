@@ -16,7 +16,7 @@ import (
 type Options struct {
 	Codecs       map[string]codec.NewCodec
 	Broker       broker.Broker
-	Registry     registry.Registry
+	Registry     registry.IRegistry
 	Tracer       trace.Tracer
 	Transport    transport.Transport
 	Metadata     map[string]string
@@ -152,7 +152,7 @@ func Context(ctx context.Context) Option {
 }
 
 // Registry used for discovery
-func Registry(r registry.Registry) Option {
+func Registry(r registry.IRegistry) Option {
 	return func(o *Options) {
 		o.Registry = r
 	}

@@ -40,7 +40,7 @@ func init() {
 	cmd.DefaultRegistries["etcd"] = NewRegistry
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	e := &etcdRegistry{
 		options:  registry.Options{},
 		register: make(map[string]uint64),

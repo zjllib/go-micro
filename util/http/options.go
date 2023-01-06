@@ -5,12 +5,12 @@ import (
 )
 
 type Options struct {
-	Registry registry.Registry
+	registry.IRegistry.Registry
 }
 
 type Option func(*Options)
 
-func WithRegistry(r registry.Registry) Option {
+func WithRegistry(r registry.IRegistry) Option {
 	return func(o *Options) {
 		o.Registry = r
 	}

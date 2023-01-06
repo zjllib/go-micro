@@ -110,7 +110,7 @@ func BenchmarkServer(b *testing.B) {
 
 }
 */
-func testGRPCServer(t *testing.T, s server.Server, c client.Client, r registry.Registry, testRPC bool) {
+func testGRPCServer(t *testing.T, s server.Server, c client.Client, r registry.IRegistry, testRPC bool) {
 	ctx := context.TODO()
 
 	h := &testServer{}
@@ -196,7 +196,7 @@ func testGRPCServer(t *testing.T, s server.Server, c client.Client, r registry.R
 	}
 }
 
-func getTestHarness() (registry.Registry, broker.Broker, transport.Transport) {
+func getTestHarness() (registry.IRegistry, broker.Broker, transport.Transport) {
 	r := rmemory.NewRegistry()
 	b := bmemory.NewBroker()
 	tr := tgrpc.NewTransport()

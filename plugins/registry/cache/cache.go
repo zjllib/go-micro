@@ -7,6 +7,6 @@ import (
 )
 
 // New returns a new cache
-func New(r registry.Registry, opts ...cache.Option) cache.Cache {
+func New(r registry.IRegistry, opts ...cache.Option) cache.Cache {
 	return cache.New(r, opts...)
 }

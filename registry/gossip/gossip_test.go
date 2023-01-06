@@ -24,7 +24,7 @@ func newMemberlistConfig() *memberlist.Config {
 	return mc
 }
 
-func newRegistry(opts ...registry.Option) registry.Registry {
+func newRegistry(opts ...registry.Option) registry.IRegistry {
 	options := []registry.Option{
 		ConnectRetry(true),
 		ConnectTimeout(60 * time.Second),

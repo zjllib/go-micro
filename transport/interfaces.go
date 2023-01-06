@@ -18,6 +18,8 @@ type (
 	}
 	//客户端
 	IClient interface {
+		//raw client
+		Raw() interface{}
 	}
 	//会话
 	ISession interface {

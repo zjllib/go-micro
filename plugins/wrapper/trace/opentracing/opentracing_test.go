@@ -66,7 +66,7 @@ func TestClient(t *testing.T) {
 			tracer := mocktracer.New()
 
 			registry := memory.NewRegistry()
-			sel := selector.NewSelector(selector.Registry(registry))
+			sel := selector.NewSelector(selector.registry.IRegistry))
 
 			serverName := "micro.server.name"
 			serverID := "id-1234567890"
@@ -81,7 +81,7 @@ func TestClient(t *testing.T) {
 				server.Name(serverName),
 				server.Version(serverVersion),
 				server.Id(serverID),
-				server.Registry(registry),
+				server.registry.IRegistry),
 				server.WrapSubscriber(NewSubscriberWrapper(tracer)),
 				server.WrapHandler(NewHandlerWrapper(tracer)),
 			)

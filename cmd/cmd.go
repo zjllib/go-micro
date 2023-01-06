@@ -244,7 +244,7 @@ var (
 
 	DefaultClients = map[string]func(...client.Option) client.Client{}
 
-	DefaultRegistries = map[string]func(...registry.Option) registry.Registry{}
+	DefaultRegistries = map[string]func(...registry.Option) registry.IRegistry{}
 
 	DefaultSelectors = map[string]func(...selector.Option) selector.Selector{}
 

@@ -46,7 +46,7 @@ func setupPod(name string) *client.Pod {
 }
 
 // registers a service against a given pod
-func register(r registry.Registry, podName string, svc *registry.Service) {
+func register(r registry.IRegistry, podName string, svc *registry.Service) {
 	os.Setenv("HOSTNAME", podName)
 
 	pod := setupPod(podName)
@@ -68,7 +68,7 @@ func teardownRegistry() {
 	mock.Teardown(mockClient)
 }
 
-func setupRegistry(opts ...registry.Option) registry.Registry {
+func setupRegistry(opts ...registry.Option) registry.IRegistry {
 	return &kregistry{
 		client:  mockClient,
 		timeout: time.Second * 1,

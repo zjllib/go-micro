@@ -10,8 +10,8 @@ import (
 	"github.com/zjllib/go-micro/selector"
 )
 
-func newTestRegistry() registry.Registry {
-	return registry.NewMemoryRegistry(registry.Services(testData))
+func newTestRegistry() registry.IRegistry {
+	return registry.NewMemoryregistry.IRegistry.Services(testData))
 }
 
 func TestCallAddress(t *testing.T) {

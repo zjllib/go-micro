@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/nats-io/nats.go"
 	"github.com/zjllib/go-micro/cmd"
 	"github.com/zjllib/go-micro/registry"
-	"github.com/nats-io/nats.go"
 )
 
 type natsRegistry struct {
@@ -398,7 +398,7 @@ func (n *natsRegistry) String() string {
 	return "nats"
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	options := registry.Options{
 		Timeout: time.Millisecond * 100,
 		Context: context.Background(),

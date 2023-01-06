@@ -38,7 +38,7 @@ type Registry struct {
 	watchers map[string]*Watcher
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	options := registry.Options{
 		Context: context.Background(),
 	}

@@ -11,6 +11,6 @@ func init() {
 }
 
 // NewRegistry returns a new mdns registry
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	return registry.NewRegistry(opts...)
 }

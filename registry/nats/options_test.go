@@ -44,7 +44,7 @@ func TestInitAddrs(t *testing.T) {
 	for _, tc := range addrTestCases {
 		t.Run(fmt.Sprintf("%s: %s", tc.name, tc.description), func(t *testing.T) {
 
-			var reg registry.Registry
+			var reg registry.IRegistry
 			var addrs []string
 
 			for _, addr := range tc.addrs {
@@ -54,7 +54,7 @@ func TestInitAddrs(t *testing.T) {
 			switch tc.name {
 			case "registryOption":
 				// we know that there are just two addrs in the dict
-				reg = NewRegistry(registry.Addrs(addrs[0], addrs[1]))
+				reg = Newregistry.IRegistry.Addrs(addrs[0], addrs[1]))
 			case "natsOption":
 				nopts := nats.GetDefaultOptions()
 				nopts.Servers = addrs

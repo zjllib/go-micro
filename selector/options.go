@@ -7,7 +7,7 @@ import (
 )
 
 type Options struct {
-	Registry registry.Registry
+	registry.IRegistry.Registry
 	Strategy Strategy
 
 	// Other options for implementations of the interface
@@ -31,7 +31,7 @@ type Option func(*Options)
 type SelectOption func(*SelectOptions)
 
 // Registry sets the registry used by the selector
-func Registry(r registry.Registry) Option {
+func Registry(r registry.IRegistry) Option {
 	return func(o *Options) {
 		o.Registry = r
 	}

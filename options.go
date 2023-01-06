@@ -31,7 +31,7 @@ type Options struct {
 	Client    client.Client
 	Server    server.Server
 	Store     store.Store
-	Registry  registry.Registry
+	Registry  registry.IRegistry
 	Runtime   runtime.Runtime
 	Transport transport.Transport
 	Profile   profile.Profile
@@ -142,7 +142,7 @@ func Store(s store.Store) Option {
 
 // Registry sets the registry for the service
 // and the underlying components
-func Registry(r registry.Registry) Option {
+func Registry(r registry.IRegistry) Option {
 	return func(o *Options) {
 		o.Registry = r
 		// Update Client and Server

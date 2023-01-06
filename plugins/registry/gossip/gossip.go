@@ -828,7 +828,7 @@ func (g *gossipRegistry) String() string {
 	return "gossip"
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	g := &gossipRegistry{
 		options: registry.Options{
 			Context: context.Background(),

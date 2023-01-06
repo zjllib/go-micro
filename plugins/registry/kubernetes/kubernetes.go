@@ -270,7 +270,7 @@ func (c *kregistry) String() string {
 }
 
 // NewRegistry creates a kubernetes registry
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	k := &kregistry{
 		options: registry.Options{},
 	}

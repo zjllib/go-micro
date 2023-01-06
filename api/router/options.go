@@ -8,7 +8,7 @@ import (
 
 type Options struct {
 	Handler  string
-	Registry registry.Registry
+	registry.IRegistry.Registry
 	Resolver resolver.Resolver
 }
 
@@ -39,7 +39,7 @@ func WithHandler(h string) Option {
 	}
 }
 
-func WithRegistry(r registry.Registry) Option {
+func WithRegistry(r registry.IRegistry) Option {
 	return func(o *Options) {
 		o.Registry = r
 	}

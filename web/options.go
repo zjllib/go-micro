@@ -35,7 +35,7 @@ type Options struct {
 	// Alternative Options
 	Context context.Context
 
-	Registry registry.Registry
+	registry.IRegistry.Registry
 	Service  micro.Service
 
 	Secure      bool
@@ -138,7 +138,7 @@ func Context(ctx context.Context) Option {
 }
 
 // Registry used for discovery
-func Registry(r registry.Registry) Option {
+func Registry(r registry.IRegistry) Option {
 	return func(o *Options) {
 		o.Registry = r
 	}

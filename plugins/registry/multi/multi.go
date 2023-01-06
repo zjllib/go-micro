@@ -9,8 +9,8 @@ import (
 )
 
 type multiRegistry struct {
-	r    []registry.Registry
-	w    []registry.Registry
+	r    []registry.IRegistry
+	w    []registry.IRegistry
 	opts registry.Options
 }
 
@@ -44,7 +44,7 @@ func (m *multiRegistry) Register(s *registry.Service, opts ...registry.RegisterO
 	}()
 
 	for _, mw := range m.w {
-		go func(w registry.Registry) {
+		go func(w registry.IRegistry) {
 			if err := w.Register(s, opts...); err != nil {
 				cerr <- err
 			} else {
@@ -86,7 +86,7 @@ func (m *multiRegistry) Deregister(s *registry.Service, opts ...registry.Deregis
 	}()
 
 	for _, mw := range m.w {
-		go func(w registry.Registry) {
+		go func(w registry.IRegistry) {
 			if err := w.Deregister(s); err != nil {
 				cerr <- err
 			} else {
@@ -135,7 +135,7 @@ func (m *multiRegistry) GetService(n string, opts ...registry.GetOption) ([]*reg
 	}()
 
 	for _, mr := range m.r {
-		go func(r registry.Registry) {
+		go func(r registry.IRegistry) {
 			svc, err := r.GetService(n)
 			if err != nil && err != registry.ErrNotFound {
 				cerr <- err
@@ -191,7 +191,7 @@ func (m *multiRegistry) ListServices(opts ...registry.ListOption) ([]*registry.S
 	}()
 
 	for _, mr := range m.r {
-		go func(r registry.Registry) {
+		go func(r registry.IRegistry) {
 			if svc, err := r.ListServices(); err != nil {
 				cerr <- err
 			} else {
@@ -221,7 +221,7 @@ func (m *multiRegistry) String() string {
 	return "multi"
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	m := &multiRegistry{
 		opts: registry.Options{
 			Context: context.Background(),
@@ -241,13 +241,13 @@ func configure(m *multiRegistry, opts ...registry.Option) error {
 		o(&m.opts)
 	}
 
-	if w, ok := m.opts.Context.Value(writeKey{}).([]registry.Registry); ok && w != nil {
+	if w, ok := m.opts.Context.Value(writeKey{}).([]registry.IRegistry); ok && w != nil {
 		m.w = w
 	}
 
 	m.r = m.w
 
-	if r, ok := m.opts.Context.Value(readKey{}).([]registry.Registry); ok && r != nil {
+	if r, ok := m.opts.Context.Value(readKey{}).([]registry.IRegistry); ok && r != nil {
 		m.r = append(m.r, r...)
 	}
 	return nil

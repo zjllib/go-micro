@@ -26,7 +26,7 @@ type Options struct {
 
 	// We need pointers to things so we can swap them out if needed.
 	Broker    *broker.Broker
-	Registry  *registry.Registry
+	Registry  *registry.IRegistry
 	Selector  *selector.Selector
 	Transport *transport.Transport
 	Cache     *cache.Cache
@@ -43,7 +43,7 @@ type Options struct {
 	Caches     map[string]func(...cache.Option) cache.Cache
 	Configs    map[string]func(...config.Option) (config.Config, error)
 	Clients    map[string]func(...client.Option) client.Client
-	Registries map[string]func(...registry.Option) registry.Registry
+	Registries map[string]func(...registry.Option) registry.IRegistry
 	Selectors  map[string]func(...selector.Option) selector.Selector
 	Servers    map[string]func(...server.Option) server.Server
 	Transports map[string]func(...transport.Option) transport.Transport
@@ -103,7 +103,7 @@ func Selector(s *selector.Selector) Option {
 	}
 }
 
-func Registry(r *registry.Registry) Option {
+func Registry(r *registry.IRegistry) Option {
 	return func(o *Options) {
 		o.Registry = r
 	}
@@ -179,7 +179,7 @@ func NewClient(name string, b func(...client.Option) client.Client) Option {
 }
 
 // New registry func
-func NewRegistry(name string, r func(...registry.Option) registry.Registry) Option {
+func NewRegistry(name string, r func(...registry.Option) registry.IRegistry) Option {
 	return func(o *Options) {
 		o.Registries[name] = r
 	}

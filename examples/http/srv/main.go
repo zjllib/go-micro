@@ -37,7 +37,7 @@ func main() {
 
 	service := micro.NewService(
 		micro.Server(srv),
-		micro.Registry(registry.NewRegistry()),
+		micro.registry.IRegistry.NewRegistry()),
 	)
 	service.Init()
 	service.Run()

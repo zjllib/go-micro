@@ -18,7 +18,7 @@ type Options struct {
 	// Plugged interfaces
 	Broker    broker.Broker
 	Codecs    map[string]codec.NewCodec
-	Registry  registry.Registry
+	Registry  registry.IRegistry
 	Selector  selector.Selector
 	Transport transport.Transport
 
@@ -158,7 +158,7 @@ func PoolTTL(d time.Duration) Option {
 }
 
 // Registry to find nodes for a given service
-func Registry(r registry.Registry) Option {
+func Registry(r registry.IRegistry) Option {
 	return func(o *Options) {
 		o.Registry = r
 		// set in the selector

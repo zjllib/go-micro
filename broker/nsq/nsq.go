@@ -163,14 +163,6 @@ func (n *nsqBroker) Publish(topic string, body []byte, opts ...broker.PublishOpt
 		doneChan chan *nsq.ProducerTransaction
 		delay    time.Duration
 	)
-	if options.Context != nil {
-		if v, ok := options.Context.Value(asyncPublishKey{}).(chan *nsq.ProducerTransaction); ok {
-			doneChan = v
-		}
-		if v, ok := options.Context.Value(deferredPublishKey{}).(time.Duration); ok {
-			delay = v
-		}
-	}
 
 	//b, err := n.opts.Codec.Marshal(message)
 	//if err != nil {
@@ -200,14 +192,7 @@ func (n *nsqBroker) Subscribe(topic string, handler broker.Handler, opts ...brok
 	}
 
 	concurrency, maxInFlight := DefaultConcurrentHandlers, DefaultConcurrentHandlers
-	if options.Context != nil {
-		if v, ok := options.Context.Value(concurrentHandlerKey{}).(int); ok {
-			maxInFlight, concurrency = v, v
-		}
-		if v, ok := options.Context.Value(maxInFlightKey{}).(int); ok {
-			maxInFlight = v
-		}
-	}
+
 	channel := options.Queue
 	if len(channel) == 0 {
 		channel = uuid.New().String() + "#ephemeral"

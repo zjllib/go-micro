@@ -6,13 +6,13 @@ import (
 	"net"
 	"strconv"
 	"time"
-	
-	"github.com/zjllib/go-micro/cmd"
-	"github.com/zjllib/go-micro/registry"
+
 	"github.com/nacos-group/nacos-sdk-go/v2/clients"
 	"github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client"
 	"github.com/nacos-group/nacos-sdk-go/v2/common/constant"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
+	"github.com/zjllib/go-micro/cmd"
+	"github.com/zjllib/go-micro/registry"
 )
 
 type nacosRegistry struct {
@@ -25,7 +25,7 @@ func init() {
 }
 
 // NewRegistry NewRegistry
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	n := &nacosRegistry{
 		opts: registry.Options{},
 	}

@@ -14,7 +14,7 @@ func TestFunction(t *testing.T) {
 	var wg sync.WaitGroup
 	wg.Add(1)
 
-	r := registry.NewMemoryRegistry(registry.Services(test.Data))
+	r := registry.NewMemoryregistry.IRegistry.Services(test.Data))
 
 	// create service
 	fn := NewFunction(

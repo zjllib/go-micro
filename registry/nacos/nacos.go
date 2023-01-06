@@ -25,7 +25,7 @@ func init() {
 }
 
 // NewRegistry NewRegistry
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	n := &nacosRegistry{
 		opts: registry.Options{},
 	}

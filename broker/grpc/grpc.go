@@ -34,7 +34,7 @@ type grpcBroker struct {
 	address string
 	opts    broker.Options
 	srv     *grpc.Server
-	r       registry.Registry
+	r       registry.IRegistry
 
 	sync.RWMutex
 	subscribers map[string][]*grpcSubscriber
@@ -100,7 +100,7 @@ func newGRPCBroker(opts ...broker.Option) broker.Broker {
 	}
 
 	// get registry
-	reg, ok := options.Context.Value(registryKey).(registry.Registry)
+	reg, ok := options.Context.Value(registryKey).(registry.IRegistry)
 	if !ok {
 		reg = registry.DefaultRegistry
 	}
@@ -312,7 +312,7 @@ func (h *grpcBroker) Connect() error {
 	}()
 
 	// get registry
-	reg, ok := h.opts.Context.Value(registryKey).(registry.Registry)
+	reg, ok := h.opts.Context.Value(registryKey).(registry.IRegistry)
 	if !ok {
 		reg = registry.DefaultRegistry
 	}
@@ -375,7 +375,7 @@ func (h *grpcBroker) Init(opts ...broker.Option) error {
 	}
 
 	// get registry
-	reg, ok := h.opts.Context.Value(registryKey).(registry.Registry)
+	reg, ok := h.opts.Context.Value(registryKey).(registry.IRegistry)
 	if !ok {
 		reg = registry.DefaultRegistry
 	}

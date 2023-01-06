@@ -398,7 +398,7 @@ func (n *natsRegistry) String() string {
 	return "nats"
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	options := registry.Options{
 		Timeout: time.Millisecond * 100,
 		Context: context.Background(),

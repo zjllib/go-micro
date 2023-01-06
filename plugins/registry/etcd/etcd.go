@@ -14,10 +14,10 @@ import (
 	"sync"
 	"time"
 
+	hash "github.com/mitchellh/hashstructure"
 	"github.com/zjllib/go-micro/cmd"
 	"github.com/zjllib/go-micro/logger"
 	"github.com/zjllib/go-micro/registry"
-	hash "github.com/mitchellh/hashstructure"
 	"go.etcd.io/etcd/api/v3/v3rpc/rpctypes"
 	"go.etcd.io/etcd/client/v3"
 	"go.uber.org/zap"
@@ -40,7 +40,7 @@ func init() {
 	cmd.DefaultRegistries["etcd"] = NewRegistry
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	e := &etcdRegistry{
 		options:  registry.Options{},
 		register: make(map[string]uint64),

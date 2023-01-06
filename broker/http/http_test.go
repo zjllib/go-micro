@@ -53,7 +53,7 @@ var (
 	}
 )
 
-func newTestRegistry() registry.Registry {
+func newTestRegistry() registry.IRegistry {
 	return memory.NewRegistry(memory.Services(testData))
 }
 

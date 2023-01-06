@@ -63,7 +63,7 @@ func configure(e *eurekaRegistry, opts ...registry.Option) error {
 	return nil
 }
 
-func newRegistry(opts ...registry.Option) registry.Registry {
+func newRegistry(opts ...registry.Option) registry.IRegistry {
 	e := &eurekaRegistry{
 		opts: registry.Options{
 			Context: context.Background(),
@@ -138,6 +138,6 @@ func (e *eurekaRegistry) instanceRegistered(instance *fargo.Instance) bool {
 	return err == nil
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	return newRegistry(opts...)
 }

@@ -16,7 +16,7 @@ import (
 // Cache is the registry cache interface
 type Cache interface {
 	// embed the registry interface
-	registry.Registry
+	registry.IRegistry
 	// stop the cache watcher
 	Stop()
 }
@@ -29,7 +29,7 @@ type Options struct {
 type Option func(o *Options)
 
 type cache struct {
-	registry.Registry
+	registry.IRegistry
 	opts Options
 
 	// registry cache
@@ -464,7 +464,7 @@ func (c *cache) String() string {
 }
 
 // New returns a new cache
-func New(r registry.Registry, opts ...Option) Cache {
+func New(r registry.IRegistry, opts ...Option) Cache {
 	rand.Seed(time.Now().UnixNano())
 	options := Options{
 		TTL: DefaultTTL,

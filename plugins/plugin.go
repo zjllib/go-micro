@@ -48,7 +48,7 @@ func Init(p *Plugin) error {
 		}
 		cmd.DefaultClients[p.Name] = pg
 	case "registry":
-		pg, ok := p.NewFunc.(func(...registry.Option) registry.Registry)
+		pg, ok := p.NewFunc.(func(...registry.Option) registry.IRegistry)
 		if !ok {
 			return fmt.Errorf("Invalid plugin %s", p.Name)
 		}

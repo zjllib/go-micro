@@ -12,10 +12,10 @@ import (
 	"time"
 
 	consul "github.com/hashicorp/consul/api"
+	hash "github.com/mitchellh/hashstructure"
 	"github.com/zjllib/go-micro/cmd"
 	"github.com/zjllib/go-micro/registry"
 	mnet "github.com/zjllib/go-micro/util/net"
-	hash "github.com/mitchellh/hashstructure"
 )
 
 type consulRegistry struct {
@@ -429,7 +429,7 @@ func (c *consulRegistry) Client() *consul.Client {
 	return c.client
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	cr := &consulRegistry{
 		opts:        registry.Options{},
 		register:    make(map[string]uint64),

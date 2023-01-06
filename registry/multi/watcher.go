@@ -13,7 +13,7 @@ type multiWatcher struct {
 	stop chan bool
 }
 
-func newMultiWatcher(r []registry.Registry, opts ...registry.WatchOption) (registry.Watcher, error) {
+func newMultiWatcher(r []registry.IRegistry, opts ...registry.WatchOption) (registry.Watcher, error) {
 	var wo registry.WatchOptions
 	for _, o := range opts {
 		o(&wo)

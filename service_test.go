@@ -25,7 +25,7 @@ func testService(ctx context.Context, wg *sync.WaitGroup, name string) Service {
 	// add self
 	wg.Add(1)
 
-	r := registry.NewMemoryRegistry(registry.Services(test.Data))
+	r := registry.NewMemoryregistry.IRegistry.Services(test.Data))
 
 	// create service
 	return NewService(

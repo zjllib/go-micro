@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/google/uuid"
 	"github.com/zjllib/go-micro/logger"
 	"github.com/zjllib/go-micro/registry"
-	"github.com/google/uuid"
 )
 
 var (
@@ -38,7 +38,7 @@ type Registry struct {
 	watchers map[string]*Watcher
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	options := registry.Options{
 		Context: context.Background(),
 	}

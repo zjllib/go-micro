@@ -38,7 +38,7 @@ func (t *testHandler) Method(ctx context.Context, req *TestRequest, rsp *TestRes
 func TestVictoriametrics(t *testing.T) {
 	// setup
 	registry := memory.NewRegistry()
-	sel := selector.NewSelector(selector.Registry(registry))
+	sel := selector.NewSelector(selector.registry.IRegistry))
 
 	name := "test"
 	id := "id-1234567890"
@@ -49,7 +49,7 @@ func TestVictoriametrics(t *testing.T) {
 		server.Name(name),
 		server.Version(version),
 		server.Id(id),
-		server.Registry(registry),
+		server.registry.IRegistry),
 		server.WrapHandler(
 			NewHandlerWrapper(
 				ServiceName(name),

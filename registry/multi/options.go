@@ -20,11 +20,11 @@ func setRegistryOption(k, v interface{}) registry.Option {
 }
 
 // WriteRegistry add underlining registries
-func WriteRegistry(w ...registry.Registry) registry.Option {
+func WriteRegistry(w ...registry.IRegistry) registry.Option {
 	return setRegistryOption(writeKey{}, w)
 }
 
 // ReadRegistry add underlining registries
-func ReadRegistry(r ...registry.Registry) registry.Option {
+func ReadRegistry(r ...registry.IRegistry) registry.Option {
 	return setRegistryOption(readKey{}, r)
 }

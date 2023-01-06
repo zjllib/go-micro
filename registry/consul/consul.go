@@ -429,7 +429,7 @@ func (c *consulRegistry) Client() *consul.Client {
 	return c.client
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	cr := &consulRegistry{
 		opts:        registry.Options{},
 		register:    make(map[string]uint64),

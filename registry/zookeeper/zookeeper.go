@@ -274,7 +274,7 @@ func (z *zookeeperRegistry) Watch(opts ...registry.WatchOption) (registry.Watche
 	return newZookeeperWatcher(z, opts...)
 }
 
-func NewRegistry(opts ...registry.Option) registry.Registry {
+func NewRegistry(opts ...registry.Option) registry.IRegistry {
 	var options registry.Options
 	for _, o := range opts {
 		o(&options)

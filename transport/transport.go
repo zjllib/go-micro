@@ -25,7 +25,6 @@ type Transport interface {
 	Options() Options
 	Dial(addr string, opts ...DialOption) (Client, error)
 	Listen(addr string, opts ...ListenOption) (Listener, error)
-	String() string
 }
 
 type Message struct {
@@ -58,7 +57,5 @@ type DialOption func(*DialOptions)
 type ListenOption func(*ListenOptions)
 
 var (
-	DefaultTransport Transport = NewHTTPTransport()
-
 	DefaultDialTimeout = time.Second * 5
 )

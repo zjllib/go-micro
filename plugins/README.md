@@ -108,7 +108,7 @@ func main() {
 		// Set service name
 		micro.Name("my.service"),
 		// Set service registry
-		micro.Registry(registry),
+		micro.registry.IRegistry),
 	)
 }
 ```
