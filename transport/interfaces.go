@@ -18,8 +18,10 @@ type (
 	}
 	//客户端
 	IClient interface {
-		//raw client
 		Raw() interface{}
+		Dial(opts ...Option) error
+		// 停止服务
+		Close() error
 	}
 	//会话
 	ISession interface {

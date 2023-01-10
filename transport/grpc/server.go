@@ -8,25 +8,28 @@ import (
 )
 
 type server struct {
+	opts       *transport.Options
 	listener   net.Listener
 	grpcServer *grpc.Server
 	secure     bool
 	tls        *tls.Config
 }
 
-func (t *server) Listen(opts ...transport.Option) error {
-	var options transport.Options
+func (s *server) Listen(opts ...transport.Option) error {
+	if s.opts == nil {
+		s.opts = new(transport.Options)
+	}
 	for _, o := range opts {
-		o(&options)
+		o(s.opts)
 	}
 
-	ln, err := net.Listen(string(transport.TCP), options.Addrs[0])
+	ln, err := net.Listen(string(transport.TCP), s.opts.Addrs[0])
 	if err != nil {
 		return err
 	}
-	t.listener = ln
-	t.grpcServer = grpc.NewServer()
-	return t.grpcServer.Serve(ln)
+	s.listener = ln
+	s.grpcServer = grpc.NewServer()
+	return s.grpcServer.Serve(ln)
 }
 
 func (s server) Close() error {
